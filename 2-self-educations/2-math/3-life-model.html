@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>人生模型 - 新生：从伪教育到自我教育</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../1-preface-to-you-like-me.html">序：致和我相似的你</a></li><li class="chapter-item expanded affix "><li class="part-title">上篇：伪教育</li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/1-family-education.html"><strong aria-hidden="true">1.</strong> 家庭教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/2-exam-oriented-education.html"><strong aria-hidden="true">2.</strong> 应试教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/3-higher-education.html"><strong aria-hidden="true">3.</strong> 高等教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/4-social-education.html"><strong aria-hidden="true">4.</strong> 社会教育</a></li><li class="chapter-item expanded affix "><li class="part-title">下篇：自我教育</li><li class="chapter-item expanded affix "><li class="part-title">知行</li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/1-knowing-the-world.html"><strong aria-hidden="true">5.</strong> 见天地</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/2-knowing-the-people.html"><strong aria-hidden="true">6.</strong> 见众生</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/3-knowing-yourself.html"><strong aria-hidden="true">7.</strong> 见自己</a></li><li class="chapter-item expanded affix "><li class="part-title">数学</li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/1-everyone-needs-math.html"><strong aria-hidden="true">8.</strong> 凡人皆需数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/2-elementary-math.html"><strong aria-hidden="true">9.</strong> 初等数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/3-life-model.html" class="active"><strong aria-hidden="true">10.</strong> 人生模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/4-goal-model.html"><strong aria-hidden="true">11.</strong> 目标模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/5-math-and-beyond.html"><strong aria-hidden="true">12.</strong> 数学与数学之外</a></li><li class="chapter-item expanded affix "><li class="part-title">马克思主义哲学</li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/1-materialism.html"><strong aria-hidden="true">13.</strong> 唯物论</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/2-two-features.html"><strong aria-hidden="true">14.</strong> 两个特征</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/3-three-laws.html"><strong aria-hidden="true">15.</strong> 三大规律</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/4-five-contradictions.html"><strong aria-hidden="true">16.</strong> 五对范畴</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/5-epistemology.html"><strong aria-hidden="true">17.</strong> 认识论</a></li><li class="chapter-item expanded affix "><li class="part-title">人际关系</li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/1-three-levels.html"><strong aria-hidden="true">18.</strong> 三种层次</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/2-three-types.html"><strong aria-hidden="true">19.</strong> 三种类别</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/3-begin.html"><strong aria-hidden="true">20.</strong> 知所起</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/4-end.html"><strong aria-hidden="true">21.</strong> 离别</a></li><li class="chapter-item expanded affix "><li class="part-title">异性关系</li><li class="chapter-item expanded "><div><strong aria-hidden="true">22.</strong> 底层模型</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">23.</strong> 通用版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">24.</strong> 女生版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">25.</strong> 男生版</div></li><li class="chapter-item expanded affix "><li class="part-title">它山之石</li><li class="chapter-item expanded "><div><strong aria-hidden="true">26.</strong> 好奇心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">27.</strong> 自信心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">28.</strong> 解耦合</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">29.</strong> 取舍</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">30.</strong> 美育</div></li><li class="chapter-item expanded affix "><li class="part-title">信息素养</li><li class="chapter-item expanded "><div><strong aria-hidden="true">31.</strong> 这是最好的时代</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">32.</strong> 极简信息论</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">33.</strong> 阅读理解</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">34.</strong> 英语</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">35.</strong> 像硅基生命一样思考</div></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../2-epilogue-to-me-like-you.html"><strong aria-hidden="true">36.</strong> 后记：致和你相似的我</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../3-acknowledgments.html">致谢</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">新生：从伪教育到自我教育</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="下篇自我教育2-数学3-人生模型"><a class="header" href="#下篇自我教育2-数学3-人生模型">下篇：自我教育/2 数学/3 人生模型</a></h1>
+<p>如果看完了<a href="https://www.xuetangx.com/course/THU07111000433/14768573">《职业探索与选择》</a>，你也许对“生涯彩虹图”有印象。</p>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/life-career-rainbow.jpg" alt="life-career-rainbow.jpg" /></p>
+<p>这张图片的要素非常多：</p>
+<ul>
+<li><strong>年龄</strong>：0-14岁是成长阶段；15-25岁是探索阶段；26-45岁是建立阶段；46-65岁是维持阶段（未标明）；66-80岁是退出阶段。</li>
+<li><strong>身份</strong>：子女；学生；休闲者；公民；工作者；持家者。注意，色块的高度对应了该身份在所有身份中的比重。一个人在中年时期的身份最多，压力也最大。</li>
+<li><strong>决定因素</strong>：环境（历史的、社会经济的）；个人（心理的、生物的）。</li>
+</ul>
+<p>生涯彩虹图是一个粗糙的人生模型。很多人的问题在于，没有生涯彩虹图的意识，仅仅在人生的各个阶段中随波逐流。那么，数学在我们的生涯彩虹图中可以起到什么作用呢？<strong>反心理的、反生物的</strong>。没有教育的加持，生涯彩虹图的个人决定因素是心理的、生物的。“心理的”服务于趋利避害；“生物的”服务于繁衍后代。它们的共同特征是非理性，而数学是理性的。如果A始终在人生的关键岔路口作出非理性的决策、B始终在人生的关键岔路口作出理性的决策，A和B的差异也就可想而知了。</p>
+<p>很多上进但无人告知技能点权重的做题人应该听说过“全国大学生数学建模竞赛”。这个竞赛含金量一般，而且鱼龙混杂。因为普适性比较强，所以参加数学建模竞赛的人非常多（包括校赛、省赛、美赛）。从含义来看，小到上街买菜的加减乘除、大到宇宙飞船，数学模型无处不在。本章第一篇文章的引例“最高年薪”正是高等数学的“串烧”。本文引出通过数学模型解析人生的意识并分析一些人生模型。</p>
+<h2 id="0x01-引例人的分类"><a class="header" href="#0x01-引例人的分类">0x01 引例：人的分类</a></h2>
+<p>既然人生有模型，能不能列几个人生模型出来看看？</p>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/maximum.png" alt="maximum.png" /></p>
+<h3 id="1-贪心算法"><a class="header" href="#1-贪心算法">1. <a href="https://en.wikipedia.org/wiki/Greedy_algorithm">贪心算法</a></a></h3>
+<blockquote>
+<p>贪心算法对应上图的第2个红点。</p>
+</blockquote>
+<p>这是大多数人的生活方式。比如，你听从大众的规训，以为高考特别重要，所以拼命地卷高考；你听从大众的规训，以为转计算机或师医公很重要，所以拼命地卷计算机或师医公；你听从大众的规训，以为润或考公务员很重要，所以拼命地卷润或考公务员。它的本质是“<strong>贪心</strong>”。那么，大多数人为什么“贪心”呢？因为<strong>数学太差</strong>。</p>
+<p>一般来说，因果链的长度决定了一个人思考问题的深度。高考、计算机、师医公、润、考公务员，它们可能重要，也可能不重要，但“知道它们为什么重要、为什么不重要”一定很重要。对于因果链短的人而言，它们重要的原因可能是大众说它们很重要，至少某些比自己更厉害的人说它们很重要；对于因果链长的人而言，ta会从时代背景（历史）、利益分配（政治）、供求关系（经济）的视角去得出可能相同、也可能不同的结论。比如，A在Bilibili看了一个北欧的视频，觉得现在是润学元年，而B知道润的副作用是有机地融入当地社会不容易。即使A和B都润出去了，A发现这又是一座围城，但B已经为适应当地社会做好了充分的准备。</p>
+<p>贪心算法所对应的人生模型是“<strong>一座又一座围城的迁徙</strong>”。这也符合每个人生阶段都可以“贪心”且大部分人选择在战略上懒惰地“贪心”。</p>
+<h3 id="2-延迟满足"><a class="header" href="#2-延迟满足">2. <a href="https://en.wikipedia.org/wiki/Delayed_gratification">延迟满足</a></a></h3>
+<blockquote>
+<p>延迟满足对应上图的第1个红点。</p>
+</blockquote>
+<p>如果意识到贪心算法的不足，ta基于延迟满足的思想，通过蛰伏、闷声发大财、后发制人等行为串起一些阶段的<strong>联系</strong>。比如，A天天做题，而B在高中的时候知道了自己未来当码农，所以把每天刷理综的时间用来学编程。A的分数比B高50分，被高中班主任劝去了南京大学地质学，但B在深圳大学计算机系里靠高中所积累的码力学有余力，早早地在GPA上领先并乱杀同侪。最终，A年薪100,000￥；B年薪1,000,000￥。从本质上看，延迟满足是<strong>放弃一时得失</strong>的高级策略。</p>
+<p>一般来说，延迟满足的收益广泛地存在。但是，上面这个例子其实是为了举例而举例。延迟满足是认知领先一个版本的体现，而这种<strong>认知差</strong>往往由视野所导致的<strong>信息差</strong>所决定。如果把A和B换成沪二代A和十八线小县城小镇做题家B，而且ta们都考入了同一所大学的同一个专业，这个例子就更加合理了。</p>
+<p>延迟满足所对应的人生模型是“<strong>高人指点</strong>”。这也符合阶级固化和贵人相助。</p>
+<h3 id="3-动态规划"><a class="header" href="#3-动态规划">3. <a href="https://en.wikipedia.org/wiki/Optimization_problem">动态规划</a></a></h3>
+<blockquote>
+<p>动态规划对应上图的第3个红点。</p>
+</blockquote>
+<p>贪心算法和动态规划体现了<strong>局部</strong>最优解和<strong>全局</strong>最优解。感兴趣的人可以读一下它们的维基百科词条和<a href="https://worktile.com/kb/ask/8975.html">这篇文章</a>。不懂贪心算法和动态规划也没有关系。如果把它们映射到人生，区别大概是这样的：</p>
+<ul>
+<li><strong>贪心算法</strong>：每一个人生阶段都卷第一或卷前 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">20%</span></span></span></span> 。比如，高考卷清华大学或985、本科卷保研或考研去更好的大学。</li>
+<li><strong>动态规划</strong>：它和延迟满足是一样的。前文提到，“延迟满足是认知领先一个版本的体现”，那么动态规划相当于“先把整个函数研究一遍，再开始卷”。你可以认为，一直唆使你“见天地”、“见众生”、“见自己”的本书正是呼吁你“<strong>拒绝“贪心”，坚持动态规划</strong>”。相比于“延迟满足串起<strong>一些</strong>阶段的联系”，动态规划串起<strong>所有</strong>阶段的联系。</li>
+</ul>
+<p>动态规划所对应的人生模型是“<strong>基于自我教育的终身学习</strong>”。这也符合“新生”。</p>
+<h3 id="4-夕死可矣"><a class="header" href="#4-夕死可矣">4. 夕死可矣</a></h3>
+<p>既然已经全局最优解了，我还需要其它的分类吗？“朝闻道，夕死可矣”好比上图的函数出现了 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord">+</span><span class="mord">∞</span></span></span></span> 。这是你完成了新生的后话。</p>
+<h2 id="0x02-目标函数"><a class="header" href="#0x02-目标函数">0x02 目标函数</a></h2>
+<ul>
+<li>乞丐版：这次高考，我要考650+分！</li>
+<li><a href="https://movie.douban.com/subject/6126442/">正白·乌哈拉萨虎爵·赏都统·世袭佐领·兼云骑尉·噶图灰达拉哈多罗贝勒</a>·VIP版：多元函数</li>
+</ul>
+<p>每个受伪教育荼毒的国产大一新生都需要从“知行”的过程中得到一些目标。这些目标可大、可小、可长、可短。如果不从知行的过程中得到目标，那么你的人生将被塞满各种奇奇怪怪的目标，比如阴阳师全图鉴、王者荣耀拿村标、原神怎么怎么滴、转入一些看似风口实则不适合你的专业、莫名其妙地参加含金量未知的竞赛、保莫名其妙的研、考莫名其妙的研、追一个自己可能追得上的异性、被一个自己可能看得上的异性追、在某座城市买房。但是，如果人生没有一条“三十而立”的主线，生活是非常残忍的。引用知乎用户<a href="https://www.zhihu.com/people/fu-lan-ke-yang">弗兰克扬</a>的<a href="https://zhuanlan.zhihu.com/p/362392710">安排定律</a>，“如果大学四年里，你方方面面都被学校<strong>和社会</strong>安排得明明白白的，那么你毕业后迟早也会被这个社会安排得明明白白的。”注意加粗的“和社会”。在伪教育中，我提到家庭教育、应试教育和高等教育是显性的，而社会教育是隐性的。像手游、淘宝、微博、知乎、小红书、哔哩哔哩这些App，它们的推荐算法也会把你的目标、你的人生、你安排得明明白白。</p>
+<p>在明确了目标最好出自“知行”的过程之后，再谈目标函数。这种经验之谈也不少，比如知乎用户<a href="https://www.zhihu.com/people/bei-ming-cheng-hai-sheng">北冥乘海生</a>的<a href="https://www.zhihu.com/question/52178718/answer/791229509">这篇知乎回答</a>和李沐的<a href="https://zhuanlan.zhihu.com/p/414009313">这篇知乎文章</a>。</p>
+<p>首先，我们定义一个最简单的目标函数：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></span></p>
+<p>其中， <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> 代表时间、 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span></span></span></span> 代表和目标的距离。随着时间（自变量）的推移，你和目标的距离（应变量）不断地变化。</p>
+<p>然后，我们定义一个更复杂的目标函数：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">p</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">e</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">i</span><span class="mclose">)</span></span></span></span></span></p>
+<p>其中， <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 代表起点、 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> 代表终点、 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span> 代表计划、 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">e</span></span></span></span> 代表执行、 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span> 代表迭代。</p>
+<p>最后，我们看看微积分除了作为读书无用论的例子，还可以干什么。</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.9185em;vertical-align:-1.2671em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8829em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2671em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.565em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="mclose">!</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight">n</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">0</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">p</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">e</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">i</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">p</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">e</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">i</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0519em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8019em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">ϵ</span><span class="mclose">)</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p>这个式子串起了 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mclose">)</span></span></span></span> 和 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mclose">)</span></span></span></span> ，而且将 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mclose">)</span></span></span></span> 展开为类似<a href="https://en.wikipedia.org/wiki/Taylor_series">Taylor series</a>的形式、将 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mclose">)</span></span></span></span> 展开为类似<a href="https://en.wikipedia.org/wiki/Mean_value_theorem">Lagrange's mean value theorem</a>的形式。</p>
+<p>代入前面的链接，不难发现“<strong>这个世界最聪明的一批人，思维都差不多</strong>”。因为ta们都接受了最聪明的自我教育，比如数学、哲学，没有被学校、社会、推荐算法安排得明明白白。</p>
+<p>基于上述的目标函数，我也列举一些营销号式的结论：</p>
+<ol>
+<li>目标函数 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span> ：清晰地定义目标函数。竺可桢语，“诸位在校，有两个问题应该自己问问：第一，到浙大来做什么？第二，将来毕业后做什么样的人？”</li>
+<li>时间 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> ：一寸光阴不可轻。</li>
+<li>起点 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ：仔细地思考你的原始资本和所受的约束。</li>
+<li>终点 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> ：往事已矣；来日可追。起点和终点构成一组对立统一的矛盾（参考下一章“马克思主义哲学”）。现在是你所有过去的终点，也是你所有未来的起点。</li>
+<li>计划 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span> ：对于人生这场游戏，高超的玩家擅于构造正反馈。优秀的计划，可以将从起点到终点的路径变得非常平滑。</li>
+<li>执行 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">e</span></span></span></span> ：千里之行，始于足下。强大的执行力是成功的必要条件之一。</li>
+<li>迭代 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span> ：对于每月每年每个人生阶段，人需要适当的总结。因为复盘整个过程可以让下一次更好地出发。</li>
+<li><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.104em;vertical-align:-0.2997em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span></span></span></span> ：抓主要矛盾。因为展开人生会出现无数的细节，所以我们必须重视有限的高阶项，省略无限的高阶无穷小。</li>
+<li><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0019em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">ϵ</span><span class="mclose">)</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> ：注意人生的步长，不要越级打怪。</li>
+</ol>
+<p>所谓的目标函数，在本质上对应<strong>做成一件事</strong>的能力。做成一件事需要某些核心能力，可以是李沐所提到的那些，也可以是我所列举的这些。本书下篇的大部分内容，其目的在于提供基本的框架和范式。只要在这个框架和范式里思考，你的思维<a href="https://en.wikipedia.org/wiki/Convergence_(logic)"><em>收敛</em></a>于这个世界最聪明的一批人，而不是<em>发散</em>于各种奇奇怪怪的歪门邪道。此外，你仍然具有足够的自主性。</p>
+<h2 id="0x03-求仁得仁"><a class="header" href="#0x03-求仁得仁">0x03 求仁得仁</a></h2>
+<p>度过幸福的一生是绝大多数普通人最重要的目标之一。那么，本节解析一条经得起数学拷问的幸福之路。</p>
+<p>一个人想要幸福，必须先清晰地回答：什么是幸福？</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">Happiness = Reality - Expectation</span></span></span></span></span></span></p>
+<p>这个式子可以解释“不知幸福为何物”的人的幸福源泉：在现实（Reality）的重压下，通过降低期待（Expectation）获得幸福（Happiness）。</p>
+<p>只要不断地降低期待，我不就幸福了嘛？貌似是这样，但这个过程是不可持续的。事实上，这个式子的Happiness不是幸福，而是“意外之喜”的喜。意外之喜不正是上式信达雅的满分翻译嘛？中华文化博大精深！如果想要过上幸福的生活，让幸福成为一种<strong>常态</strong>，那你必须让幸福的生活满足<a href="https://en.wikipedia.org/wiki/Closure_(mathematics)"><em>封闭性</em></a>。</p>
+<ul>
+<li>对于数域 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">...</span><span class="mclose">}</span></span></span></span> 和运算符 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">o</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">+</span><span class="mclose">}</span></span></span></span> 。 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">∀</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6891em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> 。</li>
+<li>对于数域 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">...</span><span class="mclose">}</span></span></span></span> 和运算符 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">o</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">+</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">−</span><span class="mclose">}</span></span></span></span> 。 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">∃</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mord"><span class="mrel">∈</span></span><span class="mord vbox"><span class="thinbox"><span class="llap"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="inner"><span class="mord"><span class="mord">/</span><span class="mspace" style="margin-right:0.0556em;"></span></span></span><span class="fix"></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> 。</li>
+</ul>
+<p>前者满足封闭性；后者不满足封闭性。所谓的数域，相当于生活状态；所谓的运算符，相当于生活状态的切换。只要生活状态是幸福的，而且生活状态的切换总是落在原来的生活状态里，那么生活满足封闭性。</p>
+<p>可以参考幸福的以下定义：</p>
+<ul>
+<li>总则：求仁得仁是幸福的根本源泉。</li>
+<li>第一法则：为了保证“仁”的最大化，必须在不确定性横行的世界，让目标的数学期望最大化。</li>
+<li>第二法则：为了保证决策样本空间的可行性，必须设置接受域，使得理论最优解与实际最优解的差距在接受域的范围内。基于此，对“近似不可得”的目标快速地剪枝，使样本空间足够地合理。</li>
+<li>第三法则：以发展的眼光看问题，不断地迭代。</li>
+<li>第四法则：为了数学期望最大化，难免做一些可能失败的事情。将“求仁”本身作为“仁”的核心，并由贝叶斯先后验分析统一成败。总则可以写成“求仁得仁的过程和结果，共同构成幸福的根本源泉，且过程的权重远远大于结果”。</li>
+</ul>
+<p><strong>自然语言版本</strong>：首先，分析目标的成功率，低于 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">5%</span></span></span></span> 的目标，pass；其次，选择“成功率 × 收益”最大的目标；最后，接纳失败，反正已经享受了求仁得仁的过程，失败了也无妨。目标和目标之间，由迭代串联而成。</p>
+<p>这几乎构成了一个无懈可击的封闭集。</p>
+<p>你当然可以有自己的定义，也应该有自己的定义，但那个定义必须经得起数学的拷问。</p>
+<blockquote>
+<p>人生八苦：生、老、病、死、怨憎会、爱别离、求不得、五阴炽盛。</p>
+</blockquote>
+<p>在此，推荐<a href="https://book.douban.com/subject/1255625/">《天龙八部》</a>。在三联版的《天龙八部》中，我觉得原书的主旨之一虽然是“求不得”苦，但天龙三男主其实分别对应了：段誉求而得（王语嫣）；萧峰求而不得（阿朱）；虚竹不求而得（梦姑）。当然，人生不只有情情爱爱，还有青衫磊落险峰行、无计悔多情、胡汉恩仇、茶花满路。人生确实也没有那么简单，因为还有“<a href="https://en.wikipedia.org/wiki/Noli_turbare_circulos_meos!">Noli turbare circulos meos!</a>（朝闻道，夕死可矣）”、“<a href="https://movie.douban.com/subject/4920528/">人生本来就有很多事是徒劳无功的啊</a>”。所以，不妨<code>DIY</code>一个专属于自己的“求仁得仁”模型。</p>
+<h2 id="0x04-失败乃成功之母"><a class="header" href="#0x04-失败乃成功之母">0x04 失败乃成功之母</a></h2>
+<p>细心的读者不难发现，本文的脉络是逐层递进的“目标函数 → 求仁得仁 → 失败乃成功之母”。失败乃成功之母算是老掉牙的大道理之一了。本节给三个切入点，供你思考。</p>
+<h3 id="1-过程重于结果"><a class="header" href="#1-过程重于结果">1. 过程重于结果</a></h3>
+<p>高中三年，高考两天。高中三年的记忆重要，还是高考分数重要？</p>
+<p>若一个目标值得你投入不短的时间、不少的精力，那么它的过程应该是繁复且有趣的。事实上，任何基于“见天地”、“见众生”、“见自己”的目标很难不繁复、很难不有趣。“得仁与否”往往是一瞬间的感觉，而“求仁”是“吹灭读书灯，一身都是月”、是毕业典礼的惜别、是虽敝帚但自珍的记忆。</p>
+<h3 id="2-成败皆是体验"><a class="header" href="#2-成败皆是体验">2. 成败皆是体验</a></h3>
+<p>成功的体验一定比失败好吗？</p>
+<p>“大三兴城实习在凌晨三点的时候怀疑人生的我，看着昏黄的路灯光”，这份记忆（体验）远超许多欣喜的瞬间。花样年华偏好站在聚光灯下的光鲜，但随着年纪的增长，甜酒的滋味未必好过一杯苦酒、烈酒或清酒。</p>
+<blockquote>
+<p>少年听雨歌楼上，红烛昏罗帐。</p>
+<p>壮年听雨客舟中，江阔云低，断雁叫西风。</p>
+<p>而今听雨僧庐下，鬓已星星也。</p>
+<p>悲欢离合总无情，一任阶前，点滴到天明。</p>
+<p>——蒋捷《虞美人·听雨》</p>
+</blockquote>
+<h3 id="3-看山论"><a class="header" href="#3-看山论">3. 看山论</a></h3>
+<blockquote>
+<p>看山是山，看山不是山，看山还是山。</p>
+</blockquote>
+<p>见《下篇：自我教育/3 马克思主义哲学/3 三大规律》的否定之否定规律。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../2-self-educations/2-math/2-elementary-math.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../2-self-educations/2-math/4-goal-model.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../2-self-educations/2-math/2-elementary-math.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../2-self-educations/2-math/4-goal-model.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

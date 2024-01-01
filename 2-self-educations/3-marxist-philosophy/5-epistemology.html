@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>认识论 - 新生：从伪教育到自我教育</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../1-preface-to-you-like-me.html">序：致和我相似的你</a></li><li class="chapter-item expanded affix "><li class="part-title">上篇：伪教育</li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/1-family-education.html"><strong aria-hidden="true">1.</strong> 家庭教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/2-exam-oriented-education.html"><strong aria-hidden="true">2.</strong> 应试教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/3-higher-education.html"><strong aria-hidden="true">3.</strong> 高等教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/4-social-education.html"><strong aria-hidden="true">4.</strong> 社会教育</a></li><li class="chapter-item expanded affix "><li class="part-title">下篇：自我教育</li><li class="chapter-item expanded affix "><li class="part-title">知行</li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/1-knowing-the-world.html"><strong aria-hidden="true">5.</strong> 见天地</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/2-knowing-the-people.html"><strong aria-hidden="true">6.</strong> 见众生</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/3-knowing-yourself.html"><strong aria-hidden="true">7.</strong> 见自己</a></li><li class="chapter-item expanded affix "><li class="part-title">数学</li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/1-everyone-needs-math.html"><strong aria-hidden="true">8.</strong> 凡人皆需数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/2-elementary-math.html"><strong aria-hidden="true">9.</strong> 初等数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/3-life-model.html"><strong aria-hidden="true">10.</strong> 人生模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/4-goal-model.html"><strong aria-hidden="true">11.</strong> 目标模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/5-math-and-beyond.html"><strong aria-hidden="true">12.</strong> 数学与数学之外</a></li><li class="chapter-item expanded affix "><li class="part-title">马克思主义哲学</li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/1-materialism.html"><strong aria-hidden="true">13.</strong> 唯物论</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/2-two-features.html"><strong aria-hidden="true">14.</strong> 两个特征</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/3-three-laws.html"><strong aria-hidden="true">15.</strong> 三大规律</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/4-five-contradictions.html"><strong aria-hidden="true">16.</strong> 五对范畴</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/5-epistemology.html" class="active"><strong aria-hidden="true">17.</strong> 认识论</a></li><li class="chapter-item expanded affix "><li class="part-title">人际关系</li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/1-three-levels.html"><strong aria-hidden="true">18.</strong> 三种层次</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/2-three-types.html"><strong aria-hidden="true">19.</strong> 三种类别</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/3-begin.html"><strong aria-hidden="true">20.</strong> 知所起</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/4-end.html"><strong aria-hidden="true">21.</strong> 离别</a></li><li class="chapter-item expanded affix "><li class="part-title">异性关系</li><li class="chapter-item expanded "><div><strong aria-hidden="true">22.</strong> 底层模型</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">23.</strong> 通用版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">24.</strong> 女生版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">25.</strong> 男生版</div></li><li class="chapter-item expanded affix "><li class="part-title">它山之石</li><li class="chapter-item expanded "><div><strong aria-hidden="true">26.</strong> 好奇心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">27.</strong> 自信心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">28.</strong> 解耦合</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">29.</strong> 取舍</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">30.</strong> 美育</div></li><li class="chapter-item expanded affix "><li class="part-title">信息素养</li><li class="chapter-item expanded "><div><strong aria-hidden="true">31.</strong> 这是最好的时代</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">32.</strong> 极简信息论</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">33.</strong> 阅读理解</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">34.</strong> 英语</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">35.</strong> 像硅基生命一样思考</div></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../2-epilogue-to-me-like-you.html"><strong aria-hidden="true">36.</strong> 后记：致和你相似的我</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../3-acknowledgments.html">致谢</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">新生：从伪教育到自我教育</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="下篇自我教育3-马克思主义哲学5-认识论"><a class="header" href="#下篇自我教育3-马克思主义哲学5-认识论">下篇：自我教育/3 马克思主义哲学/5 认识论</a></h1>
+<p>这篇文章我就多多抄书了，因为原文的逻辑比较完整且连贯。我可能在某些地方加一点旁白。</p>
+<h2 id="0x01-实践与认识"><a class="header" href="#0x01-实践与认识">0x01 实践与认识</a></h2>
+<h3 id="1-实践的定义"><a class="header" href="#1-实践的定义">1. 实践的定义</a></h3>
+<p><strong>实践</strong>是人类能动地改造世界的社会性的物质活动。</p>
+<ul>
+<li>实践具有客观实在性。</li>
+<li>实践具有自觉能动性。</li>
+<li>实践具有社会历史性。</li>
+</ul>
+<p>关于实践的主观能动性：</p>
+<ul>
+<li>人 = 高等动物 = 动物 + <strong>主观能动性</strong></li>
+<li>主观能动性不仅把人和动物区分开，还把平凡的人和平庸的人区分开。</li>
+<li>在和你相似的千万个样本中，你脱离最大似然估计的程度取决于主观能动性的强弱。</li>
+</ul>
+<blockquote>
+<p>什么叫“在样本中脱离最大似然估计”？在前文中，我屡次提到“国产大一新生”。中国有数以千万计的做题人。试想，如果从中随便选择一个人，ta的人生是什么样的？幸福吗？你愿意度过那样的人生吗？我想，随便参考一下父母辈，你至少不会给出一个偏向于肯定的答案。既然你也是千千万万的做题人之一，你凭什么摆脱统计规律呢？极高的智商？出众的执行力？绝佳的运气？从我迄今为止的观察来看，唯有主观能动性是偏航的必要条件。</p>
+</blockquote>
+<h3 id="2-实践的基本结构"><a class="header" href="#2-实践的基本结构">2. 实践的基本结构</a></h3>
+<p>实践的主体（你）、客体和中介是实践活动的三项基本要素。</p>
+<ul>
+<li><strong>实践主体</strong>：指的是具有一定的主体能力、从事现实社会实践活动的人，是实践活动中自主性和能动性的因素。</li>
+<li><strong>实践客体</strong>：指的是实践活动所指向的对象。</li>
+<li><strong>实践中介</strong>：实践的中介系统可分为两个子系统，一是作为人的肢体延长、感官延申、体能放大的物质性工具系统、二是语言符号工具系统。</li>
+</ul>
+<blockquote>
+<p>从实践中介中，已经可以看出（肖秀荣的精讲精练）马克思主义哲学的“陈旧”。上述子系统的划分颇有“古典”马克思主义哲学的味道。我可以提供一种更抽象的叙述方式，实践主体（人）基于实践中介作用于实践客体，无外乎从自然科学和社会科学上，经由其正确以扩大physical和mental的作用域。前者涉及物理学、化学、临床医学、电子技术、计算机技术等；后者涉及社会学、政治学、语言学、心理学、教育学等。不要学“肢体延长、感官延申、体能放大”以及“语言符号工具系统”这种把物质定义为“金、木、水、火、土”（古代朴素唯物主义）的枚举类，而是去试着坚持哲学的高度抽象。要知道，考研政治这些编书的人，水平自然高不到哪去，顶多东抄抄西抄抄凑出一本教辅书罢了。</p>
+</blockquote>
+<h3 id="3-实践的基本类型"><a class="header" href="#3-实践的基本类型">3. 实践的基本类型</a></h3>
+<ul>
+<li>物质生产实践</li>
+<li>社会政治实践</li>
+<li>科学文化实践</li>
+</ul>
+<h3 id="4-实践的决定作用"><a class="header" href="#4-实践的决定作用">4. 实践的决定作用</a></h3>
+<ol>
+<li>实践是认识的来源。</li>
+<li>实践是认识发展的动力。</li>
+<li>实践是认识的目的。</li>
+<li>实践是检验认识真理性的唯一标准。</li>
+</ol>
+<p>让你们考马克思主义基本原理、让你们考研，这可能是不得不背的四句踩分点，但你们不会拿它们替换自己换来换去的个性签名。</p>
+<ol>
+<li>“实践是认识的来源”，这不难理解。你听一遍徐涛的马克思主义基本原理，这是实践；你看一遍我的马克思主义哲学篇，这也是实践。它们构成了你认识马克思主义哲学的来源之二。</li>
+<li>“实践是认识发展的动力”，这有点怪了。我学习好累，听了一节课就不想听了，看了一篇文章就不想看了，怎么还可以成为我学习马克思主义哲学的动力？那说明你没有尝到马克思主义哲学的甜头。在硕士期间，我如上一篇文章所说，思考自己的偶然性和必然性，思考社会历史的偶然性和必然性，收获了极大的成长。你的认识、你的数学、你的马克思主义哲学能不能拿到奖学金、能不能得到保研资格、能不能让你找到高薪的工作，反而没有那么重要。它们真正的甜头其实在于你通过它们从这个世界中巧取豪夺所得到的生命和自由。之所以“实践是认识发展的动力”，是因为国产大一新生长期接受“学海无涯苦作舟”的病态学习观（或认识论）。事实上，学习（实践）是有乐趣的，所以学习（实践）会成为你增长知识（认识）的动力。</li>
+<li>“实践是认识的目的”，这更怪了。我学习是为了变强，为了爆金币，为了有钱花，怎么可能为了实践？当然，爆金币和花钱的过程也是一种知识变现的实践，但广义的实践是“你如何度过自己的人生”。既然“认识真正的甜头是你通过它们从这个世界中巧取豪夺所得到的生命和自由”，那么这正是你认识的目的。可以参考一下<a href="https://www.zhihu.com/question/22337430/answer/21077882">这篇回答</a>。</li>
+<li>“实践是检验认识真理性的唯一标准”，因为某任领导核心，这句话算是比较深入人心。不多赘述。</li>
+</ol>
+<h3 id="5-认识的本质"><a class="header" href="#5-认识的本质">5. 认识的本质</a></h3>
+<p><strong>认识</strong>是主体在实践基础上对客体的能动反映。</p>
+<ol>
+<li>认识是主体对客体的反映，是在思维中再现或摹写客观事物的状态、属性和本质。</li>
+<li>主体对客体的反映是一个能动的创造性的过程（反映的创造性）。</li>
+<li>在人的认识活动中，反映的特性与能动的创造特性，二者是不可分割的。</li>
+</ol>
+<p>注意，在学习马克思主义哲学的过程中，乃至后面的马克思主义政治经济学和科学社会主义，你可以看到非常多“A决定B；B反作用于A”。在马克思主义的叙事逻辑里，A是矛盾对立统一更突出的甲方。在实践与认识中，实践决定认识。我应该强调的是，可能我千言万语不及你认真地去尝试“见天地”、“见众生”、“见自己”（实践）。</p>
+<h3 id="6-从实践到认识知行"><a class="header" href="#6-从实践到认识知行">6. 从实践到认识（知行）</a></h3>
+<p>认识运动的辩证过程，首先是从实践到认识的过程，即从实践中产生<strong>感性认识</strong>，然后能动地发展到<strong>理性认识</strong>。这是认识过程的第一次飞跃。</p>
+<ul>
+<li>感性认识：指的是人们在实践基础上，由感觉器官直接感受到的关于事物的现象、事物的外部联系、事物的各个方面的认识，包括感觉、知觉和表象三种形式。</li>
+<li>理性认识：指的是人们借助抽象思维，在概括整理大量感性材料的基础上，达到关于事物的本质、全体、内部联系和事物自身规律性的认识。理性认识包括概念、判断、推理三种形式。</li>
+</ul>
+<p>认识活动是一个复杂的过程，表现为无论在感性认识中还是在理性认识中，都有非理性因素的作用。</p>
+<ul>
+<li><strong>理性因素</strong>：指的是人的理性直观、理性思维等能力。它在认识活动中的作用主要有指导作用、解释作用和预见作用等。</li>
+<li><strong>非理性因素</strong>：指的是人的情感和意志（包括冲动、欲望、本能等）。从广义上看，还包括认识能力中具有不自觉、非逻辑性等特点的认识形式，如联想、想象、猜测、直觉、顿悟、灵感等。非理性因素对于人的认识能力和认识活动具有激活、驱动和控制作用。</li>
+</ul>
+<blockquote>
+<p>再次提醒，不要学“感觉、知觉、表象”、“概念、判断、推理”、“指导、解释、预见”这种枚举类。看到类似的表述，你可以把它们理解成“无法在定义上完美地概括而举了一些‘包括但不限于’的例子”。</p>
+</blockquote>
+<h3 id="7-从认识到实践行知"><a class="header" href="#7-从认识到实践行知">7. 从认识到实践（行知）</a></h3>
+<p>从认识到实践，是认识过程的第二个阶段，是第二次能动的飞跃，也是认识过程中更为重要的一次飞跃。</p>
+<blockquote>
+<p>这句话体现了马克思主义哲学的入世，“认识世界是为了改造世界（即实践）”。</p>
+</blockquote>
+<h2 id="0x02-真理与价值"><a class="header" href="#0x02-真理与价值">0x02 真理与价值</a></h2>
+<h3 id="1-真理的定义"><a class="header" href="#1-真理的定义">1. 真理的定义</a></h3>
+<p><strong>真理</strong>是标志主观与客观相符合的哲学范畴，是对客观事物及其规律的正确反映。</p>
+<ul>
+<li>真理的<strong>客观性</strong>指的是真理的内容是客观的。</li>
+<li>真理的<strong>一元性</strong>指的是在同一条件下对于特定的认识客体的真理性认识只有一个，它不因主体认识的差别和变化而改变。</li>
+<li>真理的<strong>绝对性</strong>指的是真理主客观统一的确定性和发展的无限性。</li>
+<li>真理的<strong>相对性</strong>指的是人们在一定条件下对客观事物及其本质和发展规律的正确认识总是有限度的、不完善的。</li>
+</ul>
+<h3 id="2-价值的定义"><a class="header" href="#2-价值的定义">2. 价值的定义</a></h3>
+<p>在哲学上的“<strong>价值</strong>”指的是在实践基础上形成的主体和客体之间的意义关系，是客体对个人、群体乃至整个社会的生活和活动所具有的<strong>积极</strong>意义。</p>
+<blockquote>
+<p>例如，人和苦难。人是实践主体；苦难是实践客体。对人而言，苦难有没有意义？从某种角度来说，苦难没有意义，因为苦难本身是消极的。苦难的意义在于战胜苦难的意义，因为战胜苦难是积极的。</p>
+</blockquote>
+<ul>
+<li>价值具有<strong>主体性</strong>：价值直接同主体相联系，始终以主体为中心。</li>
+<li>价值具有<strong>客观性</strong>：在一定条件下客体对于主体的意义不依赖于主体的主观意识而存在。</li>
+<li>价值具有<strong>多维性</strong>：每个主体的价值关系具有多样性，同一客体相对于主体的不同需要会产生不同的价值。</li>
+<li>价值具有<strong>社会历史性</strong>：价值关系中的主体是在一定社会关系中从事实践的具体的人，随着实践和历史的发展，主体和客体以及主客体之间的关系发生变化，导致人们对客体评价的判断也会发生改变。</li>
+</ul>
+<h3 id="3-价值评价的基本特点"><a class="header" href="#3-价值评价的基本特点">3. 价值评价的基本特点</a></h3>
+<ol>
+<li>评价以主客体的价值关系为认识对象，以获得关于客体对于主体的意义即“善良”、“美”的认识为目的。</li>
+<li>评价结果和评价主体直接相关，受主体意志的影响。</li>
+<li>评价结果的是否正确依赖于对客体状况和主体需要的认识。</li>
+<li>价值评价有科学与非科学之别。</li>
+</ol>
+<h3 id="4-实践的真理尺度与价值尺度"><a class="header" href="#4-实践的真理尺度与价值尺度">4. 实践的真理尺度与价值尺度</a></h3>
+<ul>
+<li>实践的<strong>真理尺度</strong>：在实践中人们必须遵循正确反映事物本质和规律的真理。</li>
+<li>实践的<strong>价值尺度</strong>：在实践中人们都是按照自己的尺度和需要去认识世界和改造世界。</li>
+</ul>
+<p>其实真理与价值对立统一的痕迹早在<a href="https://github.com/Anticorianderist/de-vegetable/blob/main/1-src/2-self-educations/1-knowing-your-life/3-knowing-yourself.md">“见自己”</a>中已经显现：</p>
+<blockquote>
+<p>截至2023-02-25T22:38:25+08:00，这句话（那一天我二十一岁，在我一生的黄金时代。我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。可是我过二十一岁生日时没有预见到这一点。我觉得自己会永远生猛下去，什么也锤不了我。）在微信读书上收获了81136条划线。这句话在文艺青年的金句榜上绝对名列前茅。但事实是，我们不知道，也无法还原王小波在1973-05-13的所思所想。我们“见自己”不一样。就“见自己”的<strong>描述</strong>而言，作为没有维基词条的无名之辈，我们仍然可以还原关于自己的、海量的细节（即过去的描述）。这导致了<strong>可能性的差异</strong>。就“见自己”的<strong>结论</strong>而言，基于“天地”、“众生”的“见自己”和普通的见自己完全是两个极端，前者对后者错。这成为了<strong>平庸和平凡的界限</strong>。</p>
+<p>在介绍“信息量导致可能性的差异”和“对错导致平庸和平凡的界限”之前，需要解释<strong>描述</strong>和<strong>结论</strong>。<strong>所谓描述，指的是客观的陈述</strong>。比如，“A昨天晚上吃了一个梨”。吃了就是吃了；没吃就是没吃。无论现在和未来发生了什么，“A昨天晚上吃了一个梨”的正误不可能改变。<strong>所谓结论，指的是主观的观点</strong>。比如，“A喜欢吃梨”。同样地，喜欢就是喜欢、不喜欢就是不喜欢，难道“A喜欢吃梨”可能改变吗？注意原句的条件“无论现在和未来发生了什么”。假如A吃梨，一口咬下去，下一秒看见了半条虫子，留下了吃梨的阴影。或者，A的爸爸心血来潮，承包了几千亩的梨园。不幸的是，梨市的行情变差了，导致大批大批的梨卖不出去。为了不浪费，A和A的亲朋好友家堆满了吃都吃不完的梨。在一个月“全梨宴”的洗礼下，A终于一看到梨就反胃了。所以，“A喜欢吃梨”可能改变。如果换一个更加严谨的说法呢？比如，“昨天的A喜欢吃梨”。在这个说法之下，我从“A喜欢吃梨”的主观中走出来，客观地评价“昨天的A”。描述和结论的区别在于是否和<strong>未来</strong>有关。我们通过<strong>过去的描述</strong>得到<strong>未来的结论</strong>。过去的描述是客观的，正误不可能改变；未来的结论是主观的，正误待定。</p>
+</blockquote>
+<p>真理是客观的；价值是主观的（这在考研政治中是错误的提法，必须强调价值是主体的，但仍然是客观的）。我们可以用这对矛盾解释什么呢？信息茧房。通过一个小细节切入，“你点赞基于什么”。是认为作者说得对，还是认为作者是自己的互联网嘴替，还是希望作品（文章、音视频）得到传播？这几乎可以还原你活在真理中，还是活在价值（充满了主观性的信息茧房）中。如果基于是非，你将不断更新迭代自己明辨是非的能力；如果基于情绪，你的<a href="https://en.wikipedia.org/wiki/User_profile">用户画像</a>绝对会被算法时代利用得明明白白。不过，我们有没有必要对这个小细节足够地吹毛求疵？不需要。但是，你有必要分得清生活的哪些方面活在真理（客观）中，哪些方面活在价值（主观）中。一言以蔽之，你有必要明确真理与价值的分界线。</p>
+<h2 id="0x03-补充马克思主义政治经济学"><a class="header" href="#0x03-补充马克思主义政治经济学">0x03 补充：马克思主义政治经济学</a></h2>
+<p>说实话，初学马克思主义哲学，我感受到了其所谓的大智慧。但是，真正让我有惊喜的感觉的部分是马克思主义政治经济学。因为在中国大陆谈论政治、经济需要花费大量心血适配个人言论自由的程度、还要担心传播、审核、被批倒批臭，所以我不写。我个人建议你读（马克思主义政治经济学），但要注意到“罢黜百家，独尊马术”的春秋笔法。依我个人的观点看，马克思主义政治经济学某些定义是非常值得学习的，比如资本、价值、使用价值（商品二因素）、劳动二重性、剩余价值。此外，对于理工科学生，马克思主义政治经济学附带一些社会科学的科普，比如唯物史观、国家、阶级、社会主义、共产主义。理解这些名词，你才有可能理解这个国家，而不是跟着一帮堪称智障的犬儒说什么“一切历史都是当代史”、“上海就是浦东；浦东就是上海”。</p>
+<p>以下是一些可供参考的内容：</p>
+<ul>
+<li>马克思主义政治经济学</li>
+<li><a href="https://book.douban.com/subject/26704403/">《二手时间》</a></li>
+<li><a href="https://book.douban.com/subject/35216742/">《江村经济》</a></li>
+<li><a href="https://book.douban.com/subject/36141170/">《通往奴役之路》</a></li>
+<li><a href="https://book.douban.com/subject/36295436/">《万历十五年》</a></li>
+<li><a href="https://youtu.be/kmDOqPlJ4XE">余世存：失格</a></li>
+<li><a href="https://youtu.be/n8J0t7oKHTQ">资中筠：谈谈爱国</a></li>
+</ul>
+<p>如果你读书极少，那么我建议你先读完<a href="https://book.douban.com/subject/35796182/">《明朝那些事儿》</a>。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../2-self-educations/3-marxist-philosophy/4-five-contradictions.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../2-self-educations/4-interpersonal-relationship/1-three-levels.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../2-self-educations/3-marxist-philosophy/4-five-contradictions.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../2-self-educations/4-interpersonal-relationship/1-three-levels.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

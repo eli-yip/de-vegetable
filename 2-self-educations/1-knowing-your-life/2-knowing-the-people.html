@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>见众生 - 新生：从伪教育到自我教育</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../1-preface-to-you-like-me.html">序：致和我相似的你</a></li><li class="chapter-item expanded affix "><li class="part-title">上篇：伪教育</li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/1-family-education.html"><strong aria-hidden="true">1.</strong> 家庭教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/2-exam-oriented-education.html"><strong aria-hidden="true">2.</strong> 应试教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/3-higher-education.html"><strong aria-hidden="true">3.</strong> 高等教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/4-social-education.html"><strong aria-hidden="true">4.</strong> 社会教育</a></li><li class="chapter-item expanded affix "><li class="part-title">下篇：自我教育</li><li class="chapter-item expanded affix "><li class="part-title">知行</li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/1-knowing-the-world.html"><strong aria-hidden="true">5.</strong> 见天地</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/2-knowing-the-people.html" class="active"><strong aria-hidden="true">6.</strong> 见众生</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/3-knowing-yourself.html"><strong aria-hidden="true">7.</strong> 见自己</a></li><li class="chapter-item expanded affix "><li class="part-title">数学</li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/1-everyone-needs-math.html"><strong aria-hidden="true">8.</strong> 凡人皆需数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/2-elementary-math.html"><strong aria-hidden="true">9.</strong> 初等数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/3-life-model.html"><strong aria-hidden="true">10.</strong> 人生模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/4-goal-model.html"><strong aria-hidden="true">11.</strong> 目标模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/5-math-and-beyond.html"><strong aria-hidden="true">12.</strong> 数学与数学之外</a></li><li class="chapter-item expanded affix "><li class="part-title">马克思主义哲学</li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/1-materialism.html"><strong aria-hidden="true">13.</strong> 唯物论</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/2-two-features.html"><strong aria-hidden="true">14.</strong> 两个特征</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/3-three-laws.html"><strong aria-hidden="true">15.</strong> 三大规律</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/4-five-contradictions.html"><strong aria-hidden="true">16.</strong> 五对范畴</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/5-epistemology.html"><strong aria-hidden="true">17.</strong> 认识论</a></li><li class="chapter-item expanded affix "><li class="part-title">人际关系</li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/1-three-levels.html"><strong aria-hidden="true">18.</strong> 三种层次</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/2-three-types.html"><strong aria-hidden="true">19.</strong> 三种类别</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/3-begin.html"><strong aria-hidden="true">20.</strong> 知所起</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/4-end.html"><strong aria-hidden="true">21.</strong> 离别</a></li><li class="chapter-item expanded affix "><li class="part-title">异性关系</li><li class="chapter-item expanded "><div><strong aria-hidden="true">22.</strong> 底层模型</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">23.</strong> 通用版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">24.</strong> 女生版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">25.</strong> 男生版</div></li><li class="chapter-item expanded affix "><li class="part-title">它山之石</li><li class="chapter-item expanded "><div><strong aria-hidden="true">26.</strong> 好奇心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">27.</strong> 自信心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">28.</strong> 解耦合</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">29.</strong> 取舍</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">30.</strong> 美育</div></li><li class="chapter-item expanded affix "><li class="part-title">信息素养</li><li class="chapter-item expanded "><div><strong aria-hidden="true">31.</strong> 这是最好的时代</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">32.</strong> 极简信息论</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">33.</strong> 阅读理解</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">34.</strong> 英语</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">35.</strong> 像硅基生命一样思考</div></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../2-epilogue-to-me-like-you.html"><strong aria-hidden="true">36.</strong> 后记：致和你相似的我</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../3-acknowledgments.html">致谢</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">新生：从伪教育到自我教育</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="下篇自我教育1-知行2-见众生"><a class="header" href="#下篇自我教育1-知行2-见众生">下篇：自我教育/1 知行/2 见众生</a></h1>
+<h2 id="0x01-何谓众生"><a class="header" href="#0x01-何谓众生">0x01 何谓“众生”</a></h2>
+<blockquote>
+<p><strong>主观能动性</strong>：人的主观意识和实践活动对于客观世界的能动作用。</p>
+</blockquote>
+<p>在本书的定义中，<strong>众生</strong>：具有主观能动性的所有人。</p>
+<blockquote>
+<p><strong>人的本质</strong>：一切社会关系的总和。</p>
+</blockquote>
+<p>在本书的定义中，<strong>见众生</strong>：了解“众生”的所有组成部分，或多或少地涉猎之。</p>
+<h2 id="0x02-人的分类"><a class="header" href="#0x02-人的分类">0x02 人的分类</a></h2>
+<pre><code class="language-C">type classify(people 张三)
+{
+    if (张三.自我实现 == false) return 平庸;
+    else
+    {
+        if (张三.历史进程 == false) return 平凡;
+        else return 伟大;
+    }
+}
+</code></pre>
+<h3 id="1-平庸和平凡"><a class="header" href="#1-平庸和平凡">1. 平庸和平凡</a></h3>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/maslow-s-hierarchy-of-needs.jpg" alt="maslow-s-hierarchy-of-needs.jpg" /></p>
+<p>在本书的定义中，<strong>平庸</strong>：不是为了自我实现而活着。</p>
+<p>首先，分析一下基于<a href="https://en.wikipedia.org/wiki/Maslow&#x27;s_hierarchy_of_needs">Maslow's Hierarchy of Needs</a>的self-actualization：</p>
+<blockquote>
+<p><strong>self-actualization</strong>: desire to become the most that one can be.</p>
+<p><strong>自我实现</strong>：渴望成为自己最极致的样子。</p>
+</blockquote>
+<p>这个翻译过于笼统。我们可以从另一个角度出发：既然Maslow's Hierarchy of Needs指定了层次，看看低层次的需求是否被一一满足即可。不幸的是，第三层的爱和归属感以及第四层的尊严，筛掉了绝大多数人。要么不及格的家庭教育以不及格的爱早早地摧毁了第三层；要么不及格的应试教育、高等教育和社会教育以畸形的评价体系或多或少地摧毁了第四层。</p>
+<p>较之于Maslow远在1943年的时候所提出的陈年心理学模型，大家可能对模糊的自然语言更加亲切。</p>
+<p>比如：</p>
+<blockquote>
+<p>我们终此一生，就是要摆脱他人的期待，找到真正的自己。</p>
+<p>——伍绮诗《无声告白》</p>
+</blockquote>
+<p>再比如：</p>
+<blockquote>
+<p>结束了吗？</p>
+<p>结束了。</p>
+<p>真的结束了吗？</p>
+<p>没有。</p>
+<p>……</p>
+<p>是的，这就是我想说的，这就是我想通过徐霞客所表达的，足以藐视所有王侯将相，最完美的结束语：</p>
+<p>成功只有一个——按照自己的方式，去度过人生。</p>
+<p>——当年明月《明朝那些事儿》</p>
+</blockquote>
+<p>值得一提的是，我之所以引用《明朝那些事儿》的最后一章，而不是它的最后一句话，是因为“只要缺了徐霞客，就缺了灵魂”。我们可以从很多地方看到很多类似于“成功只有一个——按照自己的方式，去度过人生”的金句。但是，只有徐霞客乱入了以帝王将相为主角的宏大叙事，大家才纳闷：“为什么要写徐霞客呢？”因为明朝那些事儿的亲历者不只有朱元璋、严嵩、海瑞这些在庙堂之上的政治家，还有李时珍、徐霞客和千千万万的浮生百姓。现在亦是如此。</p>
+<p>“我们终此一生，就是要摆脱他人的期待，找到真正的自己”和“成功只有一个——按照自己的方式，去度过人生”已经足够呼应自我实现——平庸和平凡的界限。为了让你对号入座，我列举三条平庸者的特征：</p>
+<ul>
+<li><strong>活在ta人的期待里</strong>：“ta人”指的是在世俗意义上的成功观，而非具体的人。比如，通过卷赢ta人获得快感、腰有十文钱必振衣作响、“富贵不还乡，如锦衣夜行”。更加隐蔽的是，为了摆脱ta人的期待而陷入其对立面，是否也属于“活在ta人的期待里”？比如，“举世皆浊我独清，众人皆醉我独醒”、“顺我者独立思考，逆我者被人洗脑”。类比概率论的<a href="https://en.wikipedia.org/wiki/Independence_(probability_theory)">相互独立</a>，“活在ta人的期待里”是自己和ta人的期待<strong>正相关</strong>；“为了摆脱ta人的期待陷入其对立面”是自己和ta人的期待<strong>负相关</strong>；真正的摆脱是自己和ta人的期待<strong>相互独立</strong>。</li>
+<li><strong>被恶心的阈值极低</strong>：举一个例子。假如你是王阳明的粉丝，而我大放厥词，“王阳明那套理论在当今时代中用处不大。”一看到“用处不大”，你啪一下就点进来了，很快啊！这个行为属于“被恶心的阈值极低”。那么，“被恶心的阈值极高”是什么状态呢？可以参考一下韩信的胯下之辱。</li>
+<li><strong>不具备<a href="https://en.wikipedia.org/wiki/Critical_thinking">critical thinking</a></strong>：继续上一条特征的例子。我补充，“王阳明那套理论在当今时代中用处不大，是因为时代不断地发展。当今时代的复杂度和明朝不可同日而语。王阳明作为封建社会哲学思想的集大成者，在明朝或许可以自洽，但无法解决现在的主要矛盾，甚至无法解决某些小问题。”我的补充对于王阳明及其心学而言，是正面的还是负面的？所谓大成若缺，任何的人事物都需要不断地进步以适应外界的变化，而critical thinking是其中的重要技能点。</li>
+</ul>
+<blockquote>
+<p>记者：你喜欢和什么样的人交往？</p>
+<p>乔布斯：我特别喜欢和聪明人交往，因为不用考虑他们的尊严。</p>
+<p>记者：聪明人没有尊严吗？</p>
+<p>乔布斯：不，聪明人更关注自己的成长，时刻保持开放的心态，而不是捍卫面子，不是想方设法证明“我没错”。</p>
+</blockquote>
+<p>这段对话完美地涵盖了以上三个特征。当越过了平庸和平凡的界限，你的三观将迎来第一次剧变。</p>
+<h3 id="2-平凡和伟大"><a class="header" href="#2-平凡和伟大">2. 平凡和伟大</a></h3>
+<blockquote>
+<p>一个人的命运啊，当然要靠自我奋斗，但是也要考虑历史这个行程。</p>
+<p>——江泽民</p>
+</blockquote>
+<p>引用一段<strong>唯物史观</strong>的内容：按照个人对社会历史起作用的程度和方式的不同，可以区分为普通个人和历史人物。有的人的作用小些，可称为“<strong>普通个人</strong>”，他们对社会发展贡献的总和构成了人民群众创造历史的活动；有的人的作用大些，可称为“<strong>历史人物</strong>”。按其发挥作用的性质，历史人物有些起推动历史前进的进步作用；有些起阻碍历史前进的反动作用。<strong>杰出人物</strong>是历史人物中对推动历史发展作出重要贡献或起重要作用的人。在历史发展进程中，新的历史任务往往是由具有进步意义的历史人物首先发现或提出来的。但是，<strong>历史人物不管在历史上发挥什么样的作用，都要受到社会发展客观规律的制约，而不能决定和改变历史发展的总进程和总方向。</strong></p>
+<p>这是一个复杂的话题。首先明确一点，平凡和伟大不是对应普通个人和历史人物。如果读懂了唯物史观，尤其读懂了群众史观与英雄史观的区别，你应该可以理解：历史人物（伟大）是由历史所选中的，即“可以通过自我实现的‘尽人事’走上平凡之路，但历史进程所决定的‘知天命’是伟大之路的必要条件”。此外，普通个人和历史人物的区分取决于个人对社会历史起作用的程度。假如零基础，你很难注意到这种细节的必要性。比如，慈禧是历史人物，但不是杰出人物。有人推动历史前进；有人推动历史后退。所谓的“前进”与“后退”涉及对立统一规律、量变质变规律、否定之否定规律，以致于“个人对社会历史起作用的程度和方式”是一种独立于价值、道德的描述。因为本书的落脚点是平凡之路，所以本小节点到为止。对本话题感兴趣的读者可以自行了解唯物史观。</p>
+<h2 id="0x03-站在不吃香菜的肩膀上"><a class="header" href="#0x03-站在不吃香菜的肩膀上">0x03 站在不吃香菜的肩膀上</a></h2>
+<p>线下，我读过山沟沟里的人、村里的人、乡里的人、县里的人、二线城市的人、一线城市的人；线上，我读过<a href="http://bboczeng.blogspot.com/2013/02/blog-post.html">互联网的庸众</a>、<a href="https://space.bilibili.com/697166795/">平凡的人</a>、<a href="https://en.wikipedia.org/wiki/Linus_Torvalds">伟大的人</a>、<a href="https://book.douban.com/subject/26787299/">真实的人</a>、<a href="https://book.douban.com/subject/34461199/">虚构的人</a>、<a href="https://twitter.com/bboczeng">活着的人</a>、<a href="https://book.douban.com/subject/26342533/">死去的人</a>。</p>
+<p>我以四个阅人里程碑还原我的部分心路历程。</p>
+<ol>
+<li><a href="https://weibo.com/drwujun">吴军博士</a>，清华大学的<a href="https://www.xuetangx.com/course/THU08091000278/5881531">《大数据技术与应用》</a>的第8场讲座：我应该是在大一的时候还是在大二的时候看完了这场讲座。就内容而言，我几乎已经忘光了，只记得“2%的人通过机器智能控制98%的人”。<strong>之所以它（指讲座）成为第一个阅人里程碑，是因为我第一次看到存在于现实世界、个人实力及魅力足以征服我的注意力的人</strong>。换句话说，在本科那个慕强的人生阶段里，吴军是我所见的第一个同时代精英。中学时期，我也在电视上看过所谓的天之骄子（即名校生）云集的<a href="https://movie.douban.com/subject/25912244/">一站到底</a>，比如曾经让我印象深刻的刘也行，但这种百科全书式的真人秀格调太低。同时代有余；精英范不足。至于在教科书里的人物，比如钱钟书、沈从文。精英范有余；同时代不足。一言以蔽之，<strong>第一个阅人里程碑“吴军在这场讲座中所散发出来的精英气质”是我在线上看到的第一个榜样</strong>。即使现在的网红一代不如一代，但只要上下求索而不倦，你一定可以找到自己所向往的人生。</li>
+<li>金巍老师，大二兴城实习的言传身教：<strong>第二个阅人里程碑“金巍老师的言传身教”是我在线下看到的第二个榜样</strong>。高中时期，钱钟书的性格对我影响很大，“整个清华，没有一个教授够资格当钱某人的导师。”彼之恃才傲物；吾之目中无人。从小到大，“站在讲台上的那个人不配教我”贯穿了我的学生时代，但金巍老师例外。在大二兴城实习的时候，我们学院为我们班安排了“双”带队老师，其中之一是吉林大学地球科学学院的原院长。在大二末期，我按照大一的奖学金名额精确地计算了我所需要达到的排名。6学分之巨的兴城实习不容有失。因为这类课程的得分点是杂七杂八的报告、地质图，而不记名的平时分没有什么权重，所以我天天摸鱼。有一次，金巍老师正在讲解兴城海滨的某处地质现象；我和另外几位同学在距离两米不到的地方聊得正欢。第二个带队老师看我们不爽，把我们骂了一顿，而且记录在案！我……为了挽救兴城实习的成绩，我开始在金巍老师面前疯狂地刷脸。虽然缘起非常丑陋，但我收获了一段完美的人生体验。和金巍老师相处了一段时间才发现，这位老先生确实凭真才实学（软硬实力双双拉满）行走江湖。此观察一反我对地学界“人才凋敝”的刻板印象。我之前见过一些还行的老师，但要么没有机会深入地了解、要么对方师德过硬能力不足、要么对方能力过硬师德不足。唯有金巍老师，无可挑剔。<strong>之所以它（指言传身教）成为第二个阅人里程碑，是因为我第一次和个人实力及魅力足以征服我的注意力的人线下接触</strong>。对师者的最高评价莫过于“学为人师，行为世范”（北京师范大学的校训）。学校的档次越高，线下接触神仙老师的概率越大。在普通学校，即使某些老师的师德过硬（足以让你感念），其个人实力及魅力也难以称得上榜样。在本科末期，我经常往返于吉林大学朝阳校区的图书馆，其走廊陈列着许多的摄影作品。金巍老师所摄的“阿尔卑斯山的小屋”和<a href="https://movie.douban.com/subject/1291561/">千与千寻</a>的海上列车一样，让我始终奔涌的心得以享受片刻的平静。</li>
+<li><a href="https://movie.douban.com/subject/26818263/">刘欣《朗读者》</a>，<a href="https://book.douban.com/subject/26787399/">中国现代群星闪耀时</a>：在评价《朗读者》这档脱口秀之前，我需要画一道护身符“对于朗读者们来说，中国现代群星这个称呼是否过誉”。相比于茨威格笔下的人类群星，朗读者们是不是过于黯淡了？此外，某些朗读者已经塌房，比如李云迪、白岩松；主持人董卿赴美产子打脸《朗读者》的部分政治正确也让它减分不少。对此，我不讨论瑕不掩瑜或金玉其外败絮其中，只谈谈我的一个正面观后感和<strong>第三个阅人里程碑“作为灯塔的朗读者们”</strong>。如果你满足于当一个平庸者，那么你的人生非常简单，随波逐流即可。但是，正如《序：致与我相似的你》所说，“从平庸走向平凡，是痛苦的。求索之人，就像一条条离岸访仙山的船只，在茫茫无际的大海中航行。”我们一抬头就能看见闪耀的人类群星吗？不一定能。在充满“光污染”的现在，我甚至可以说“一定不能”。我们偏偏看不出伟大的人赶上了历史进程，也往往无从被群星指引迷惘、无助、孤独的前路。相比于被昼夜、阴晴、人造光源所阻隔的群星，求索之人更加需要沿途的灯塔。对于绝大部分平庸者而言，即便灯塔，在日常生活中也是少有的。正是一些近在眼前的（伪）平凡人（绝大部分朗读者别说伟大了，连平凡都不一定够得上）可以暂时地照亮你的心之所往。对我而言，郑渊洁唤醒了我读<a href="https://book.douban.com/series/9422">皮皮鲁系列</a>和<a href="https://book.douban.com/series/12408">鲁西西系列</a>的记忆；<a href="https://en.wikipedia.org/wiki/Xue_Qikun">薛其坤</a>在日本求学期间的境况、<a href="https://en.wikipedia.org/wiki/Wang_Jian_(computer_scientist)">王坚</a>初创阿里云的辛酸往事、胡德夫的<a href="https://youtu.be/NVx949129XE">《一幅画》</a>是一步一停一回首的乡愁，我深深地为之感动。<strong>之所以它（指灯塔）成为第三个阅人里程碑，是因为“藉藉无名”的朗读者们让我思考平凡和伟大的关系</strong>。通过《朗读者》，我发现“原来这个世界那么多幸福的平凡者”，而且ta们让我发自心底地尊重。</li>
+<li><a href="https://www.xuetangx.com/course/THU04011000334/14767483">《经典与思考——人文清华大师面对面》</a>，格非、陈来和跨界对话：<strong>第四个阅人里程碑是“我成为了一名合格的旁观者”</strong>。和大部分人一样，我之前也有所谓的“下饭视频”（《朗读者》是本科的“下饭视频”之一）。2021年年中，我初入上海交通大学。遂了2020-06-25上海外滩辞旧迎新的愿，一年后的我意气风发，清理了一切平庸者的陋习（比如王者荣耀），决定“洗心革面，重新做人”。既然如此，“下饭视频”也必须升级。学堂在线，启动！从“见天地”的角度来看，《经典与思考——人文清华大师面对面》是一种没有学习目标的探索。通过《经典与思考——人文清华大师面对面》，我惊觉：我似乎可以毫不费力地听懂ta们的观点和弦外之音，甚至批判地“评头论足”。从那时起，我不再仰视强者、俯视弱者，而是平视所有人。<strong>之所以它（指惊觉）成为了第四个阅人里程碑，是因为我开始“无偏地”读人</strong>。</li>
+</ol>
+<p>基于本人踩过的坑和浪费的时间，我的建议是：</p>
+<ol>
+<li><strong>见天地</strong>：参考上一篇文章。“见天地”之所以是“见众生”的前置条件，是因为没有“天地”的定义、专有名词和框架等，几乎无法描述“众生”。换言之，不见“天地”，何以见“众生”经由“天地”所写就的“众生”？</li>
+<li><strong>广泛地了解不同的生活方式（本文的链接已经足够丰富），选择可望、可及且最为之心潮澎湃的一种人生</strong>：猫狗自由、故纸堆里寄余生、活着就是为了改变世界等。只要“天地”见得足够地充分，不难发现：伟大的人在“天地”中具有非常强的存在感，比如经典著作、影响了后续的人类文明；平凡的人在“天地”的某个领域中留下了名字，但达不到前者的跨界影响力，比如业内有名有姓的小人物、几篇高质量论文成为了在教科书中未被展开的一句话；平庸的人是一个又一个数字。</li>
+<li><strong>展开所选择的人生</strong>：我不加论证地下一个结论：任何平凡的生活方式均存在完整的既有路径；任何伟大的生活方式均不可能通过既有路径实现。也就是说，自我奋斗是平凡的充分条件；历史行程是伟大的必要条件。基于已有的信息，你可以切换到任何平凡的生活方式。“平凡之路，行则将至”也是本书的理论依据。</li>
+<li><strong>持之以恒的自我奋斗，直至理想的生活方式成为稳态</strong>：第2点所提到的“可望、可及”是为所欲为的前提“为所可为”。绝大部分大一新生的人生目标“有手就行”，因为你们所受教育之烂、眼界之小、认知之低，根本无从志存高远。从个人经验来看，我的人生目标总是随着个人成长而成长。你们可以天马行空地想，因为大一新生即无限可能。仰望星空，脚踏实地，直到成为自己想要成为的样子。</li>
+</ol>
+<h2 id="0x04-众生相"><a class="header" href="#0x04-众生相">0x04 众生相</a></h2>
+<h3 id="1-读人"><a class="header" href="#1-读人">1. 读人</a></h3>
+<p>首先，有必要澄清一个偏见：<strong>做人须坦诚，忌城府太深</strong>。读人这个词听起来好可怕！我不喜欢和城府太深的人一起玩！亲爱的，你睁开眼睛看看，你在一个什么样的地方之中生活？</p>
+<p>然后，有必要纠正一个误区：<strong>老练的读人者可以一眼看透其ta人</strong>。这是不可能的。读人的段位的衡量标准应该是“ta的言行举止向你透露了多少有用的信息”。</p>
+<ul>
+<li><strong>有用的信息</strong>：动机先于有用无用之分。对于绝大部分的过客，我们不需要彻底地了解ta。比如你的任课老师，你只需要了解ta所教的课程（质量、分数占比等），但你不需要知道ta喜欢什么颜色。</li>
+<li><strong>ta的言行举止</strong>：在此衡量标准之下，你是主体；ta是客体。你与ta的社交关系即互相呈现言行举止的过程。你的言行举止服务于你的动机；ta的言行举止服务于ta的动机。你的言行举止是基于你的动机和ta的言行举止的反应。举一个例子。A喜欢B，于是A约B吃饭，但B拒绝了。A的动机是“和B在一起”；A的言行举止是“约B吃饭”；B的动机是“不喜欢A，于是想中止A的追求”；B的言行举止是“拒绝A”。在一段比较久的社交关系中，动机和言行举止的演变非常复杂。</li>
+<li><strong>多少</strong>：为了不让读者将本文误解为厚黑学，我举一个“不失一般性”的例子。A和B听一节C的数学课。A从不低于140分（满分150分）；B从不高于90分。A觉得C是蠢材，因为C永远只讲参考答案的解法；B觉得C是天才，因为C讲得浅显易懂。A在听了一节C的数学课之后，不听数学课了；B听了整整三年，考上了北京师范大学，后来成为了一名高中数学老师。B在讲完了自己的第一节数学课之后，想起了A对C的评价“C是蠢材”，狠狠地共情了。C作为A与B相同的客体，A与B在<strong>相同的动机</strong>（听课）下从C<strong>相同的言行举止</strong>（讲课）中得到<strong>有用的信息</strong>（C是蠢材）的效率是不同的。</li>
+</ul>
+<p>读人和训练<a href="https://en.wikipedia.org/wiki/Artificial_neural_network">神经网络</a>类似：</p>
+<ol>
+<li><strong>归并</strong>：建立“众生”模型，使之合理化所有已知的“心”、“言”、“行”。</li>
+<li><strong>预测</strong>：基于“众生”模型，预测ta（任何一个在“众生”模型之中的人）的未来。</li>
+<li><strong>总结</strong>：在未来成为了现在之后，根据预测的误差，调整“众生”模型。</li>
+</ol>
+<p><strong>“众生”模型的有效性（归并的合理性、预测的准确性）取决于你的段位和阅历</strong>。对于<strong>段位</strong>，除了基本的逻辑（<a href="https://en.wikipedia.org/wiki/Deductive_reasoning">推理</a>与<a href="https://en.wikipedia.org/wiki/Inductive_reasoning">归纳</a>），“众生”模型和社会科学的关系比较密切，因为社会科学从“众生”中提取正确的结论。对于<strong>阅历</strong>，一个人所处的社交圈，即“众生”模型的有效性的上限。显然，你读不懂你读不到的人。<strong>“众生”模型的收敛性（总结）取决于你的段位和“步长”</strong>。类似于本文第三节“群星和灯塔”的逻辑，如果一个人读不懂周围的人（或平庸或平凡），读懂伟大的人就是天方夜谭。<a href="https://book.douban.com/subject/36102998/">《围城》</a>是完美的情商鉴定器。<strong>如果你可以从生活中找齐《围城》的所有原型，读人的段位肯定过关了。</strong></p>
+<h3 id="2-绘浮世"><a class="header" href="#2-绘浮世">2. 绘浮世</a></h3>
+<p>所谓浮世，指的是人与人有机地结合的<strong>集体</strong>。“见众生”之难，不在读人，而在人与人之间的社交关系。绘浮世的关键词包括但不限于：</p>
+<ul>
+<li><strong>个人与集体</strong>：从读人到绘浮世，是因为你永远处在集体之中。对集体的认知水平决定了你在集体之中的最终位置：在哪里读大学；在哪个行业工作；在哪里工作。比如，你卷了三年高考，意味着你不可能被录取为哈佛大学的本科生。难道不卷高考，转而卷哈佛大学，就可能成为哈佛大学的本科生吗？不能。但是，思考“高考之外的可能性”让你跳出了原先的集体（做题人）。</li>
+<li><strong>个人利益与集体利益</strong>：借用一个常见的比喻“蛋糕”，集体利益相当于蛋糕；个人利益相当于个人所分得的蛋糕。基于蛋糕和分蛋糕，集体可以分为“蛋糕变大，且分配方式合理”、“蛋糕变小，且分配方式合理”、“蛋糕不变，且分配方式不合理”、“分配方式不合理，但受益人是自己”、“分配方式不合理，但受害者是自己”、“分蛋糕的人越来越多”、“分蛋糕的人越来越少”……比如“润”，即移民到“蛋糕更大且分配方式更合理”的地方。</li>
+<li><strong>沟通</strong>：在集体之中，个人与个人的社交过程。</li>
+<li><strong>生产者与消费者</strong>：从本质上看，个人与个人的社交过程是利益互换的过程。最直观的例子，“生产者工作；消费者在拿到工资之后吃喝玩乐”。个人既是生产者，又是消费者，而生产者与消费者的利益互换构成了集体。为了浅浅地解释“利益互换是社交过程的本质”，举一个不直观的例子，“A在母亲节的时候买了一束花送给妈妈B；B在A过生日的时候发了一个红包给ta”。A在母亲节的时候是情绪的生产者，在自己生日的时候是情绪的消费者。所谓的生产或消费不仅指钱、时间，而且指情绪、爱。</li>
+</ul>
+<p>所谓绘浮世，指的是通过类似上述关键词的定义，解析集体。和读人一样，本节也提供一个参考标准<a href="https://movie.douban.com/subject/2210001/">《大明王朝1566》</a>。<strong>如果你可以<a href="https://zhuanlan.zhihu.com/p/25204426">解析《大明王朝1566》</a>每个人的利益互换，绘浮世的段位肯定过关了。</strong></p>
+<h2 id="0x05-见众生の必要条件"><a class="header" href="#0x05-见众生の必要条件">0x05 见众生の必要条件</a></h2>
+<ul>
+<li>只要交往时间足够，相信自己可以读懂任何人，包括最复杂的政治家。</li>
+<li>见自己，活出自己的独一无二。</li>
+<li>假如对“众生”的某类人感兴趣，可以有机地融入ta们所在的集体。</li>
+<li>与任何人之间，存在合适的边界。</li>
+<li>不会被PUA，而且具备PUA他人的能力。</li>
+<li>完全理解“天下熙熙，皆为利来；天下攘攘，皆为利往”所蕴含的哲理。</li>
+<li>完全理解“各美其美，美人之美，美美与共，天下大同”所蕴含的哲理。</li>
+</ul>
+<p><strong>只要交往时间足够，相信自己可以读懂任何人，包括最复杂的政治家。</strong>“见众生”之翘楚莫过于政治家。一个人的三观几乎不可能在三十岁之后继续变化，而通过漫长岁月的“言”、“行”还原一颗不变的“心”一定是足够的。<a href="https://movie.douban.com/subject/3821067/">“ta和你相识了半辈子，实则你不知ta，ta不知你”</a>，都是沟通不足使然。此必要条件对应读人。</p>
+<p><strong>见自己，活出自己的独一无二。</strong>“见天地”形成了自己的自然属性；“见众生”形成了自己的社会属性。<a href="https://movie.douban.com/subject/3821067/">它俩各成了自己的一体两面，它俩齐全了，“见自己”这门功夫才算齐全。</a></p>
+<ul>
+<li><strong>假如对“众生”的某类人感兴趣，可以有机地融入ta们所在的集体。</strong></li>
+<li><strong>与任何人之间，存在合适的边界。</strong></li>
+<li><strong>不会被PUA，而且具备PUA他人的能力。</strong></li>
+</ul>
+<p>所谓有机地融入某个集体，反映了绘浮世的能力。只有懂某个集体，才知道自己感不感兴趣、才知道如何有机地融入其中。由表及里、由浅入深，说到底只是人以群分的结果。在某个存在稳态的集体之中，个人与个人之间存在某个合适的边界。我们不断地在集体之中切换、不断地犯错，其中最大的成长即认知自己所想要的社会属性且习得构造该社会属性的能力。至于PUA，这是“见众生”最微不足道的作用了。</p>
+<p><strong>完全理解“天下熙熙，皆为利来；天下攘攘，皆为利往”所蕴含的哲理</strong>。这个必要条件对应绘浮世的完备性，核心在于“皆”。上文提到，“从本质上看，个人与个人的社交过程是利益互换的过程。”除了常见的钱、权、名，情绪、陪伴、爱等“无私”的付出也是“利”。纵使天下熙熙攘攘，也不过只是一个又一个集体的利益来往。</p>
+<p><strong>完全理解“各美其美，美人之美，美美与共，天下大同”所蕴含的哲理</strong>。这个必要条件对应绘浮世的健壮性，上文的“唯利是图”看似自私，但它可以达到真正的完备。“各美其美，美人之美，美美与共，天下大同”的桃源盛景，除了通过无限的生产力支撑虚无缥缈的道德实现，还有一种方式是个人与个人之间经由“绝对理性”形成“均衡态”。假如所有的个人都是“唯利是图”的精致利己主义者，那么“利ta”将成为最精致的“利己”。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../2-self-educations/1-knowing-your-life/1-knowing-the-world.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../2-self-educations/1-knowing-your-life/3-knowing-yourself.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../2-self-educations/1-knowing-your-life/1-knowing-the-world.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../2-self-educations/1-knowing-your-life/3-knowing-yourself.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

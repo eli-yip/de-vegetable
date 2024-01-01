@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>三大规律 - 新生：从伪教育到自我教育</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../1-preface-to-you-like-me.html">序：致和我相似的你</a></li><li class="chapter-item expanded affix "><li class="part-title">上篇：伪教育</li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/1-family-education.html"><strong aria-hidden="true">1.</strong> 家庭教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/2-exam-oriented-education.html"><strong aria-hidden="true">2.</strong> 应试教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/3-higher-education.html"><strong aria-hidden="true">3.</strong> 高等教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/4-social-education.html"><strong aria-hidden="true">4.</strong> 社会教育</a></li><li class="chapter-item expanded affix "><li class="part-title">下篇：自我教育</li><li class="chapter-item expanded affix "><li class="part-title">知行</li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/1-knowing-the-world.html"><strong aria-hidden="true">5.</strong> 见天地</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/2-knowing-the-people.html"><strong aria-hidden="true">6.</strong> 见众生</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/3-knowing-yourself.html"><strong aria-hidden="true">7.</strong> 见自己</a></li><li class="chapter-item expanded affix "><li class="part-title">数学</li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/1-everyone-needs-math.html"><strong aria-hidden="true">8.</strong> 凡人皆需数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/2-elementary-math.html"><strong aria-hidden="true">9.</strong> 初等数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/3-life-model.html"><strong aria-hidden="true">10.</strong> 人生模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/4-goal-model.html"><strong aria-hidden="true">11.</strong> 目标模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/5-math-and-beyond.html"><strong aria-hidden="true">12.</strong> 数学与数学之外</a></li><li class="chapter-item expanded affix "><li class="part-title">马克思主义哲学</li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/1-materialism.html"><strong aria-hidden="true">13.</strong> 唯物论</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/2-two-features.html"><strong aria-hidden="true">14.</strong> 两个特征</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/3-three-laws.html" class="active"><strong aria-hidden="true">15.</strong> 三大规律</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/4-five-contradictions.html"><strong aria-hidden="true">16.</strong> 五对范畴</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/5-epistemology.html"><strong aria-hidden="true">17.</strong> 认识论</a></li><li class="chapter-item expanded affix "><li class="part-title">人际关系</li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/1-three-levels.html"><strong aria-hidden="true">18.</strong> 三种层次</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/2-three-types.html"><strong aria-hidden="true">19.</strong> 三种类别</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/3-begin.html"><strong aria-hidden="true">20.</strong> 知所起</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/4-end.html"><strong aria-hidden="true">21.</strong> 离别</a></li><li class="chapter-item expanded affix "><li class="part-title">异性关系</li><li class="chapter-item expanded "><div><strong aria-hidden="true">22.</strong> 底层模型</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">23.</strong> 通用版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">24.</strong> 女生版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">25.</strong> 男生版</div></li><li class="chapter-item expanded affix "><li class="part-title">它山之石</li><li class="chapter-item expanded "><div><strong aria-hidden="true">26.</strong> 好奇心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">27.</strong> 自信心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">28.</strong> 解耦合</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">29.</strong> 取舍</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">30.</strong> 美育</div></li><li class="chapter-item expanded affix "><li class="part-title">信息素养</li><li class="chapter-item expanded "><div><strong aria-hidden="true">31.</strong> 这是最好的时代</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">32.</strong> 极简信息论</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">33.</strong> 阅读理解</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">34.</strong> 英语</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">35.</strong> 像硅基生命一样思考</div></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../2-epilogue-to-me-like-you.html"><strong aria-hidden="true">36.</strong> 后记：致和你相似的我</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../3-acknowledgments.html">致谢</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">新生：从伪教育到自我教育</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="下篇自我教育3-马克思主义哲学3-三大规律"><a class="header" href="#下篇自我教育3-马克思主义哲学3-三大规律">下篇：自我教育/3 马克思主义哲学/3 三大规律</a></h1>
+<p>哲学之强，强在世界观的大一统，进而衍生出强大的方法论。前两篇文章类似于数学的定义（唯物主义、可知论）和定理（普遍联系、永恒发展）；后面三篇文章更加接近数学的推论（三大规律、五对范畴、认识论）。例如，数列的极限。</p>
+<ul>
+<li>初期，许多教材可能会通过定义（ <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">ϵ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> ）证明某个数列的极限存在。</li>
+<li>中期，许多教材可能会引入定理（<a href="https://en.wikipedia.org/wiki/Squeeze_theorem">夹挤定理</a>）证明某个数列的极限存在。此时，夹挤定理所使用的数列一般是极限<strong>显然</strong>存在的数列，比如 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.0074em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">n</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> 、 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.1771em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.4911em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.5904em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> ，而这些数列之所以显然，一般是因为在学微积分的初期已经证明了。</li>
+<li>后期，许多教材可能会引入推论（单调有界必收敛）证明某个数列的极限存在。此推论来源于极限的定义，但它又不同于定理。</li>
+</ul>
+<p>在熬过了“数列的极限”的初期，证明“数列的极限存在”再也不用去找 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> 关于 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ϵ</span></span></span></span> 的下界了。</p>
+<p>之所以将数学作为例子，是因为哲学作为方法论的强大之处源于世界观的大一统，和数学一样。假如我提出了一门全新的哲学——菜学，只要我的定理或推论和定义相悖，菜学立马被失败学、躺平学、赢学批倒批臭。强调这一点是为了让没有哲学的做题人重定向至立足于社会科学的哲学的正道。</p>
+<p>据我观察，做题人在形成三观的十年（中学和大学）里热衷于各种金句（个性签名）：</p>
+<ul>
+<li>种一棵树最好的时间是十年前，其次是现在。</li>
+<li>一切都是最好的安排。</li>
+<li>那一天我二十一岁，在我一生的黄金时代。我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。</li>
+<li>保持热爱，奔赴山海。</li>
+<li>接受平凡，拒绝平庸。</li>
+<li>桃李不言，下自成蹊。</li>
+<li>凡此过往，皆为序章。</li>
+<li>从来如此，就对吗？</li>
+<li>也许每一个男子全都有过这样的两个女人，至少两个。娶了红玫瑰，久而久之，红的变了墙上的一抹蚊子血，白的还是“床前明月光”；娶了白玫瑰，白的便是衣服上沾的一粒饭粘子，红的却是心口上一颗朱砂痣。</li>
+</ul>
+<p>这些金句对不对？最准确的答案是“不全对”。每一句话在刚出现的时候都是对的，因为它蕴含了<strong>古往今来的成因</strong>。例如，“种一棵树最好的时间是十年前，其次是现在。”当作者说这句话的时候，ta肯定顿悟了“后悔无用，不如及时行动”。在作者眼中，这句话在刚出现的时候当然是对的；在你的眼中呢？在你以某句话为座右铭的时候，那句座右铭是对的。但是，如果抛开作者的顿悟以及你初见的共情，那句座右铭肯定可以被杠。例如，从明天开始大旱一年，那么（种树）最好的时间是一年后。让某句座右铭“全对”的关键是什么呢？理解它古往今来的成因。平凡之路的终点之一是形成了一门<strong>自洽</strong>（符合自己古往今来的成因）的哲学。</p>
+<p>在一些铺垫之后，下面进入本文的正题。</p>
+<h2 id="0x01-对立统一"><a class="header" href="#0x01-对立统一">0x01 对立统一</a></h2>
+<p>唯物辩证法是一个完整的科学体系，包括一系列的基本规律和范畴，其中对立统一规律是唯物辩证法的实质和核心。这是因为：</p>
+<ol>
+<li>对立统一规律揭示了事物普遍联系的根本内容和变化发展的内在动力，从根本上回答了事物为什么会发展的问题。</li>
+<li>对立统一规律是贯穿量变质变规律、否定之否定规律以及唯物辩证法基本范畴的中心线索，也是理解这些规律和范畴的“钥匙”。</li>
+<li>对立统一规律提供了人们认识世界和改造世界的根本方法——矛盾分析方法。</li>
+</ol>
+<p>矛盾是辩证法的核心概念：对立统一规律又称矛盾规律。矛盾是反映事物内部和事物之间对立统一关系的哲学范畴。对立和统一分别体现了矛盾的两种基本属性（斗争性和同一性）。</p>
+<ul>
+<li>矛盾的同一性：矛盾着的对立面相互依存、相互贯通的性质和趋势。</li>
+<li>矛盾的斗争性：矛盾着的对立面相互排斥、相互分离的性质和趋势。</li>
+<li>矛盾的普遍性：矛盾存在于一切事物中，存在于一切事物发展过程的始终。</li>
+<li>矛盾的特殊性：各个具体事物的矛盾及每一个矛盾的各个方面在发展的不同阶段上各有其特点。</li>
+</ul>
+<p>以下是几组对立统一的矛盾：</p>
+<ul>
+<li><strong>知行与行知</strong>：按照我的逻辑，不应该是先知行，后行知吗？知行：找到自己的三观；行知：践行自己的三观。如果上了道，你会发现知行与行知不存在明显的分界线。比如，在人生的知行篇学完了<a href="https://www.xuetangx.com/course/THU07111000433/14768573">《职业探索与选择》</a>，我当然会第一时间将其化为己用，而不是等到某个时间点（知行与行知的分界线）。也许你上一秒钟顿悟的某条道理（如果它足够地重要）足以掀翻你的整个三观，行知之路被迫戛然而止了，又得踏上知行之路。你在行知的过程中不断地验证知行是否正确，不断地通过实践补足“知”与“行”的差距。从宏观上，我们可以基于某个重要的时间点划分知行（寻找平凡之路）与行知（走平凡之路）；从微观上，知行与行知完全是相辅相成、密不可分的一组矛盾。</li>
+<li><strong>思源与致远</strong>：上海交通大学（闵行校区）有两个湖，一个是思源湖，另一个是致远湖。不知道哪位校友提出了“思源致远，天地交通”的说法。同学们，大智慧啊！这句话包含了马克思主义哲学的唯物主义（天地）、普遍联系（交通，又和校名双关）、对立统一规律（思源致远）。欢迎报考上海交通大学（闵行校区）！回到正题，为什么“思源与致远”是一组对立统一的矛盾？从本质上来说，思源是知行的过程（见自己）；致远是行知的过程。所以，它们成为了一组矛盾。继续展开一点，思源思得越深，致远致得越远。不妨记住这句话，当到达了自己的天花板（致远），你应该知道从哪里可以得到突破它的力量（思源）。</li>
+<li><strong>“可怜之人必有可恨之处”与“可恨之人必有可怜之处”</strong>：结合<a href="https://github.com/Anticorianderist/blog/blob/main/1-src/2-the-negation-of-negation/2-dedust/attribution-determining-the-boundary-of-inward-and-outward.md">归因：定乎内外之分</a>谈一谈这组矛盾。前者是向外归因；后者是向内归因。对于可怜之人必有可恨之处，它将可怜之人的可怜向外归因于“ta的可恨”；对于可恨之人必有可怜之处，它将可恨之人的可恨向内归因于“自己不了解ta的可怜之处”。</li>
+</ul>
+<p>当然，你可以套用对立统一规律，把这些矛盾继续展开。顺着鸡生蛋、蛋生鸡的死循环思考下去，你可以理解“对立统一规律揭示了事物普遍联系的根本内容和变化发展的内在动力，从根本上回答了事物为什么会发展的问题。”辅以联系的普遍性（普遍联系），你可以得到发展的永恒性（永恒发展）。</p>
+<p>我们通过对比来衬托最无用的学科——哲学的强大。和什么对比呢？</p>
+<ul>
+<li>《易经》：易有太极，是生两仪，两仪生四象，四象生八卦。</li>
+<li>《道德经》：祸兮福之所倚，福兮祸之所伏。</li>
+<li>《般若般罗密多心经》：舍利子。色不异空。空不异色。色即是空。空即是色。受想行识。亦复如是。舍利子。是诸法空相。不生不灭。不垢不净。不增不减。</li>
+</ul>
+<p>这几句话非常对立统一。如果套用马克思主义哲学的对立统一规律，展开“阴与阳”、“祸与福”、“色与空、生与灭、垢与净、增与减”，可以得到更<strong>科学</strong>（正确）、更完整的论述。引用王小波的一段话：</p>
+<blockquote>
+<p>我说<a href="https://book.douban.com/subject/36295436/">《万历十五年》</a>是本好书，但又这样鸡蛋里挑骨头式地找它的毛病，这是因为此书不会因我的歪批而贬值，它的好处是显而易见的。它是一面镜子，照见了我们的前辈——古时候的读书人，或者叫做儒生们——是怎样做人做事的。古往今来的读书人，从<strong>经典</strong>里学到了一些粗浅的原则，觉得自己懂了春秋大义，站出来管理国家，妄断天下的是非曲直，结果把一切都管得一团糟，大明帝国是他们交的学费，大清帝国又是他们交的学费。老百姓说：罐子里养王八，养也养不大。儒学的罐子里长不出<strong>现代国家</strong>来。万历十五年是今日之鉴，尤其是人文知识分子之鉴，我希望他们读过此书之后，收拾起胸中的狂妄之气，在书斋里发现粗浅原则的热情会有所降低，把这些原则套在国家头上的热情也会降低。少了一些造罐子的，大家的日子就会好过了。</p>
+<p>@ 王小波<a href="https://book.douban.com/subject/35010183/">《不新的〈万历十五年〉》</a></p>
+</blockquote>
+<ul>
+<li>在经典中，“微言大义”，阴阳（即两仪）一不小心“生”了两次，就“生”出了八卦，而八卦又狠狠地定了吉凶。这是什么狗屁道理？</li>
+<li>在现代国家中，粗浅的原则肯定行不通。这也回收了前面的伏笔“强调这一点是为了让没有哲学的做题人重定向至立足于社会科学的哲学的正道”。</li>
+</ul>
+<p>对立统一正是从不自洽（比如阴阳凭什么定吉凶）中开辟了永恒发展的道路，让曾经某些粗浅的原则退出历史的舞台。同样地，你的哲学也应该从现代哲学中生发出来。当然，对于普通的生活，不多的哲学也已经够用了。</p>
+<h2 id="0x02-量变质变"><a class="header" href="#0x02-量变质变">0x02 量变质变</a></h2>
+<p>事物包括<strong>质</strong>、<strong>量</strong>、<strong>度</strong>三方面的规定性。</p>
+<ul>
+<li>质是一事物成为自身并区别于其它事物的内在规定性。</li>
+<li>量是事物的规模、程度、速度等可以用数量关系表示的规定性。</li>
+<li>度是保持事物质的稳定性的数量界限，即事物的限度、幅度和范围。</li>
+</ul>
+<p>进而：</p>
+<ul>
+<li><strong>量变</strong>是事物数量的增减和组成要素排列次序的变动，是保持事物的质的相对稳定性的不显著变化。</li>
+<li><strong>质变</strong>是事物性质的根本变化，是事物由一种质态向另一种质态的飞跃。</li>
+<li>区分量变和质变的根本标志是事物的变化是否<strong>超出度</strong>。</li>
+</ul>
+<p>基于质、量、度、质变、量变所引出的方法论是比较通俗的，比如量变引起质变。这个规律某些性质的抽象性（渐进性、连续性、飞跃性）影响了它成为一个通用的范式。量变引起质变可以用于论证“题海战术的有效性”。这极大地浪费了量变质变规律的抽象性。在一些更加普适的场景中，比如每个人生阶段都是量变质变的过程、每个目标的奋斗之路都是量变质变的过程。这种过渡使量变质变规律将“积沙成塔”的窄化版本升级为万事万物的通用版本。</p>
+<ul>
+<li>人生阶段：量变质变的节点在于一场又一场毕业典礼。</li>
+<li>目标：量变质变的节点在于deadline降临的时刻（你也可以把毕业典礼当作deadline）。</li>
+<li>今天：量变质变的节点在于入眠。</li>
+</ul>
+<p>你可以把所有的事物套用一个分段函数：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:3em;vertical-align:-1.25em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord">0.2</span><span class="mpunct">,</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord">0.8</span><span class="mpunct">,</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.9</span><span class="mclose">)</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mopen">[</span><span class="mord">0.9</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.2</span></span></span></span> 、 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.8</span></span></span></span> 和 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.9</span></span></span></span> 等数值可以自行修改。如果将对立统一规律视作事物内在的根本性质，那么量变质变规律就是事物外在的基本性质。其要素无外乎：</p>
+<ul>
+<li>量变是连续的、长期的（ <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.9</span><span class="mclose">)</span></span></span></span> ）；质变是阶跃的，短期的（ <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0.9</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span> ）。</li>
+<li>度界定量变和质变的边界（ <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.9</span></span></span></span> ）。</li>
+<li>在单位时间内，量变的权重小（ <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.2</span></span></span></span> ），而质变的权重大（ <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.8</span></span></span></span> ）。</li>
+</ul>
+<p>从唯物主义开始，马克思主义哲学所有的讨论都笼罩在对立统一规律之下。你可以将事物和事物嵌套，比如多个今天构成了目标、多个目标构成了人生阶段（恰好和数学篇的例子统一了）。</p>
+<blockquote>
+<p>数与形，本是相倚依，焉能分作两边飞。数缺形时少知觉，形少数时难入微。数形结合百般好，隔裂分家万事非。切莫忘，几何代数统一体，永远联系，切莫分离。</p>
+<p>@ 华罗庚</p>
+</blockquote>
+<p>可以把数学视作精确的数、哲学视作模糊的形，“数形结合”解析人生实在是绰绰有余。</p>
+<h2 id="0x03-否定之否定"><a class="header" href="#0x03-否定之否定">0x03 否定之否定</a></h2>
+<p>任何事物内部都存在着肯定因素和否定因素。</p>
+<ul>
+<li>肯定因素是维持现存事物存在的因素。</li>
+<li>否定因素是促使现存事物灭亡的因素。</li>
+</ul>
+<p>发展的实质是新事物的产生和旧事物的灭亡。</p>
+<ol>
+<li>否定式事物的自我否定、自我发展，是事物内部矛盾运动的结果。</li>
+<li>否定式事物发展的环节。</li>
+<li>否定是新旧事物联系的环节。</li>
+<li>辩证否定的实质是“扬弃”。</li>
+</ol>
+<p>否定之否定规律原理：</p>
+<ol>
+<li>事物的辩证发展过程经过第一次否定，使矛盾得到初步解决。而处于否定阶段的事物仍然具有片面性，还要经过再次否定，即否定之否定，实现对立面的统一，使矛盾得到解决。</li>
+<li>事物的辩证发展就是经过两次否定、三个阶段，即“肯定一否定一否定之否定”，形成一个周期。其中否定之否定阶段仿佛是向原来出发点的“回复”，但这是在更高阶段的“回复”，是“扬弃”的结果。</li>
+<li>事物的这种否定之否定过程，从内容上看，是自己发展自己、自己完善自己的过程；从形式上看，是螺旋式上升或波浪式前进的过程。</li>
+</ol>
+<p>“看山是山，看山不是山，看山还是山”正好对应这个规律。</p>
+<ol>
+<li>看山<strong>是</strong>山：肯定</li>
+<li>看山<strong>不是</strong>山：否定</li>
+<li>看山<strong>还是</strong>山：否定之否定</li>
+</ol>
+<p>完美地对应了否定之否定规律的“两次否定”和“三个阶段”。</p>
+<p>类似的三境界、三段论非常多，但可以长期套在自己身上的三阶段，大概只有否定之否定规律了。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../2-self-educations/3-marxist-philosophy/2-two-features.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../2-self-educations/3-marxist-philosophy/4-five-contradictions.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../2-self-educations/3-marxist-philosophy/2-two-features.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../2-self-educations/3-marxist-philosophy/4-five-contradictions.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

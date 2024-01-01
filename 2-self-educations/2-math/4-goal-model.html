@@ -1,0 +1,425 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>目标模型 - 新生：从伪教育到自我教育</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../1-preface-to-you-like-me.html">序：致和我相似的你</a></li><li class="chapter-item expanded affix "><li class="part-title">上篇：伪教育</li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/1-family-education.html"><strong aria-hidden="true">1.</strong> 家庭教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/2-exam-oriented-education.html"><strong aria-hidden="true">2.</strong> 应试教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/3-higher-education.html"><strong aria-hidden="true">3.</strong> 高等教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/4-social-education.html"><strong aria-hidden="true">4.</strong> 社会教育</a></li><li class="chapter-item expanded affix "><li class="part-title">下篇：自我教育</li><li class="chapter-item expanded affix "><li class="part-title">知行</li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/1-knowing-the-world.html"><strong aria-hidden="true">5.</strong> 见天地</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/2-knowing-the-people.html"><strong aria-hidden="true">6.</strong> 见众生</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/3-knowing-yourself.html"><strong aria-hidden="true">7.</strong> 见自己</a></li><li class="chapter-item expanded affix "><li class="part-title">数学</li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/1-everyone-needs-math.html"><strong aria-hidden="true">8.</strong> 凡人皆需数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/2-elementary-math.html"><strong aria-hidden="true">9.</strong> 初等数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/3-life-model.html"><strong aria-hidden="true">10.</strong> 人生模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/4-goal-model.html" class="active"><strong aria-hidden="true">11.</strong> 目标模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/5-math-and-beyond.html"><strong aria-hidden="true">12.</strong> 数学与数学之外</a></li><li class="chapter-item expanded affix "><li class="part-title">马克思主义哲学</li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/1-materialism.html"><strong aria-hidden="true">13.</strong> 唯物论</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/2-two-features.html"><strong aria-hidden="true">14.</strong> 两个特征</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/3-three-laws.html"><strong aria-hidden="true">15.</strong> 三大规律</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/4-five-contradictions.html"><strong aria-hidden="true">16.</strong> 五对范畴</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/5-epistemology.html"><strong aria-hidden="true">17.</strong> 认识论</a></li><li class="chapter-item expanded affix "><li class="part-title">人际关系</li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/1-three-levels.html"><strong aria-hidden="true">18.</strong> 三种层次</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/2-three-types.html"><strong aria-hidden="true">19.</strong> 三种类别</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/3-begin.html"><strong aria-hidden="true">20.</strong> 知所起</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/4-end.html"><strong aria-hidden="true">21.</strong> 离别</a></li><li class="chapter-item expanded affix "><li class="part-title">异性关系</li><li class="chapter-item expanded "><div><strong aria-hidden="true">22.</strong> 底层模型</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">23.</strong> 通用版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">24.</strong> 女生版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">25.</strong> 男生版</div></li><li class="chapter-item expanded affix "><li class="part-title">它山之石</li><li class="chapter-item expanded "><div><strong aria-hidden="true">26.</strong> 好奇心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">27.</strong> 自信心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">28.</strong> 解耦合</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">29.</strong> 取舍</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">30.</strong> 美育</div></li><li class="chapter-item expanded affix "><li class="part-title">信息素养</li><li class="chapter-item expanded "><div><strong aria-hidden="true">31.</strong> 这是最好的时代</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">32.</strong> 极简信息论</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">33.</strong> 阅读理解</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">34.</strong> 英语</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">35.</strong> 像硅基生命一样思考</div></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../2-epilogue-to-me-like-you.html"><strong aria-hidden="true">36.</strong> 后记：致和你相似的我</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../3-acknowledgments.html">致谢</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">新生：从伪教育到自我教育</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="下篇自我教育2-数学4-目标模型"><a class="header" href="#下篇自我教育2-数学4-目标模型">下篇：自我教育/2 数学/4 目标模型</a></h1>
+<h2 id="0x01-引例时间管理"><a class="header" href="#0x01-引例时间管理">0x01 引例：时间管理</a></h2>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/hidden-man.jpg" alt="hidden-man.jpg" /></p>
+<h3 id="1-目标-to-任务"><a class="header" href="#1-目标-to-任务">1. 目标 to 任务</a></h3>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/target2tasks.jpg" alt="target2tasks.jpg" /></p>
+<p>我的日记本以年为单位。首先，我每年会设立一些<strong>目标</strong>，时间跨度在半年到一年之间。在设立目标之后，将每个目标分解为一系列可直接执行的<strong>任务</strong>，任务的执行时间从0.5h到1h不等。随着实践的深入，不断地调整目标和任务。等到所有任务完成了，目标也就实现了。</p>
+<p>以写知乎为例，我之前每周六晚上花3h写2000字左右。 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">50</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">350</span></span></span></span> ，笔耕不辍方可实现。</p>
+<h3 id="2-to-do-list"><a class="header" href="#2-to-do-list">2. To Do List</a></h3>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/to-do.png" alt="to-do.png" /></p>
+<p>日记的第1部分是<code>To Do List</code>。你可以把所有已确定deadline的任务放在这里，一来，作为备忘录；二来，适当地给自己一些压力；三来，将已完成的任务从<code>To Do List</code>中移除可以带来正反馈和成就感。有一个不得不提的小建议：<strong>写好模板</strong>。在<code>To Do List</code>新增任务的时候，在模板里添加；在完成任务之后，在模板里删除。理想的状态是“每天起床，复制模板；从<code>To Do List</code>中选择任务，填满整块时间；执行，在完成任务后将其从模板中删除；每天的碎片时间或每周特定的整块时间，补充<code>To Do List</code>。</p>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/dairy-template.jpg" alt="dairy-template.jpg" /></p>
+<h3 id="3-记录"><a class="header" href="#3-记录">3. 记录</a></h3>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/record.jpg" alt="record.jpg" /></p>
+<p>日记的第2部分是“计划＋记录”。从<code>To Do List</code>中选取任务是为计划；记录实际的执行情况（&lt;n/m&gt;：m表示任务的计划时长为m小时；n表示任务的已执行时长为n小时）。</p>
+<h3 id="4-日省吾身"><a class="header" href="#4-日省吾身">4. 日省吾身</a></h3>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/introspection.jpg" alt="introspection.jpg" /></p>
+<p>日省吾身是“谋一日以谋一生”的核心所在。第一，我只跟自己卷，别人强不强可以影响我的判断，但绝对不影响我的心态。第二，进步 = 时间 × 效率，而实力和进步（自变量）的函数关系近似于对数函数，通过自律和高效成为优秀的人只是时间问题。</p>
+<ul>
+<li><strong>健康管理</strong>：身体是享受生活的本钱。有命活，才有命体验。</li>
+<li><strong>时间管理</strong>：优化效率，反思计划的执行情况。必须思考的问题是，如果重新开始，如何度过今天？</li>
+<li><strong>社交管理</strong>：优化社交。反思人事物的交互。同上。如果重新开始，如何改进社交？</li>
+</ul>
+<p>当然，每个人可以根据自身的价值观，选择三省吾身的主题。每天的自省一定会发现某些优化点反复出现。将该优化点设置为一个习惯。从<code>0</code>开始计数，做到加<code>1</code>，没做到归零。若每月做到了21天，基本养成了一个新的好习惯。</p>
+<h3 id="5-涓滴体验"><a class="header" href="#5-涓滴体验">5. 涓滴体验</a></h3>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/experiences.png" alt="experiences.png" /></p>
+<p>每天花一些时间做自己喜欢的事情，这是时间管理的意义所在。涓滴体验可以源于爱好，也可以源于意料之外的小确幸，还可以是发自内心的悲伤和喜悦。如果说其它时间是为了谋生，那么涓滴体验就是为了生活。以后重温来时路，这个部分将会成为赛博时间囊。</p>
+<h3 id="6-总结"><a class="header" href="#6-总结">6. 总结</a></h3>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/target2tasks.jpg" alt="target2tasks.jpg" /></p>
+<p>所谓的总结（图中未显示的第3部分），即复盘。无论目标成功或失败，分析结果可以纠正自己错误的认知。总结的本质在于提高“做成一件事”的能力。把任何目标都当作相同的一件事，目标 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> 分析  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> 总结。久而久之，你终将求仁得仁。</p>
+<h2 id="0x02-可行性分析"><a class="header" href="#0x02-可行性分析">0x02 可行性分析</a></h2>
+<p>和本节关系最密切的课程是《线性代数》。正常的工科生对《线性代数》的主要需求是让向量化、矩阵化的数据可以充分地挖掘计算机的算力。平凡之路将其用于目标的可行性分析。</p>
+<h3 id="1-线性方程组"><a class="header" href="#1-线性方程组">1. 线性方程组</a></h3>
+<p>先通过几个线性方程组让数学和目标的可行性挂钩：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3em;vertical-align:-1.25em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">9</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p><strong>正定</strong>：方程存在<strong>唯一解</strong>。</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3em;vertical-align:-1.25em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">9</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p><strong>欠定</strong>：方程存在<strong>无穷多解</strong>。</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:4.32em;vertical-align:-1.91em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.35em;"><span style="top:-2.2em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-2.192em;"><span class="pstrut" style="height:3.15em;"></span><span style="height:0.316em;width:0.8889em;"><svg xmlns="http://www.w3.org/2000/svg" width='0.8889em' height='0.316em' style='width:0.8889em' viewBox='0 0 888.89 316' preserveAspectRatio='xMinYMin'><path d='M384 0 H504 V316 H384z M384 0 H504 V316 H384z'/></svg></span></span><span style="top:-3.15em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.292em;"><span class="pstrut" style="height:3.15em;"></span><span style="height:0.316em;width:0.8889em;"><svg xmlns="http://www.w3.org/2000/svg" width='0.8889em' height='0.316em' style='width:0.8889em' viewBox='0 0 888.89 316' preserveAspectRatio='xMinYMin'><path d='M384 0 H504 V316 H384z M384 0 H504 V316 H384z'/></svg></span></span><span style="top:-4.6em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.85em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.41em;"><span style="top:-4.41em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">9</span></span></span><span style="top:-2.97em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">12</span></span></span><span style="top:-1.53em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">3</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">4</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.91em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p><strong>超定</strong>：方程<strong>无解</strong>。</p>
+<h3 id="2-定"><a class="header" href="#2-定">2. 定</a></h3>
+<p>从上帝视角来看，世界可能是正定的；从个人视角来看，世界必然是欠定的。换言之，你无法为任意足够小的目标建立正定的数学模型。在本小节中，你需要理解和正定、欠定、超定相对应的三个模型：决定论、概率论和混沌论。</p>
+<h4 id="a-决定论"><a class="header" href="#a-决定论">A. 决定论</a></h4>
+<p>假设时空的起点是宇宙大爆炸、时间是量子化的、世界是正定的，那么现在和未来早已注定。因为没有相关的物理背景与哲学背景，所以我不过多分析，以免暴露本人粗浅的学识。对决定论感兴趣的读者，可以自行了解和思考。注意，决定论和宿命论完全不同。决定论是具有物理背景的哲学概念；虽然宿命论似乎也沾点哲学，但它和宗教、文化的关系更大。</p>
+<blockquote>
+<p>你信仰投骰子的上帝；我却信仰完备的定律和秩序。</p>
+<p>——爱因斯坦</p>
+</blockquote>
+<p>本文的<strong>决定论模型</strong>：所有的人事物存在某个起点。假如拿到了该起点的所有信息，我们可以精确地推演未来的任意时刻（唯一解）。</p>
+<p>至少迄今为止，我的每一个重大的目标、每一个重大的决策、每一个重大的错误，都可以找到相应的过去。决定论所管辖的范围至少包括“马后炮的自洽”。你应该让所见所闻被自己的认知体系合理化。</p>
+<p>一言以蔽之，<strong>决定论解释过去</strong>。</p>
+<h4 id="b-概率论"><a class="header" href="#b-概率论">B. <a href="https://github.com/Anticorianderist/blog/blob/main/1-src/1-information-flow/1-read/fooled-by-randomness-the-very-simplified-probability-theory.md">概率论</a></a></h4>
+<p>如前文所说，从上帝视角来看，世界可能是正定的；从个人视角来看，世界必然是欠定的。假如我们把 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 砍掉几行（漏掉了几行信息，欠定了）。此时，解的形式为 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord">...</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 。为了简单起见，我们不考虑线性组合所导致的无穷多解，而是简化为“线性方程组的解可能是 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 或 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ，而且是 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 的概率为 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 、是 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 的概率为 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ，而且 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>。”</p>
+<p>在人生的岔路口，我们经常面临类似的情境，比如“考研清华大学，成功率30%，收益100”、“考研厦门大学，成功率70%，收益70”、“考研南昌大学，成功率98%，收益10”。假如采用《下篇：自我教育/2 数学/3 人生模型》的贪心算法，不考虑在考研成功之后的状态（多阶段的动态规划），可以算出各个选择的收益：“厦门大学<code>49</code> &gt; 清华大学<code>30</code> &gt; 南昌大学<code>9.8</code>。”厦门大学<code>49</code>、清华大学<code>30</code>、南昌大学<code>9.8</code>的量化思维正是数学的优势所在。</p>
+<p>本文的<strong>概率论模型</strong>：所有的人事物存在某个起点。假如拿到了该起点的所有信息，我们可以推演未来的任意时刻（唯一解）。但是，我们必然拿不到该起点的所有信息。通过欠定信息，我们可以预测未来的若干可能选项（及其收益和概率）。</p>
+<p>这个模型又可以负责你人生的哪些部分？其中之一是力所能及地作出最优的决策而且<strong>无悔</strong>。后者是一种相当稀缺的品质。</p>
+<p>一言以蔽之，<strong>概率论决定现在</strong>。</p>
+<h4 id="c-混沌论"><a class="header" href="#c-混沌论">C. 混沌论</a></h4>
+<blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Chaos_theory">Chaos theory</a> is an interdisciplinary area of scientific study and branch of mathematics focused on underlying patterns and deterministic laws of dynamical systems that are highly sensitive to initial conditions, and were once thought to have completely random states of disorder and irregularities.</p>
+</blockquote>
+<p>理工科学生可能有一门必修课，大学物理实验。我当年的大学物理实验似乎有一节课的教学内容是看视频。那个视频演示了什么是混沌（物理意义）。这填补了我的空白：“有了积跬步至千里的微积分（决定论）、量化不确定性的概率论与数理统计（概率论），再加上让人放弃治疗的混沌（混沌论），岂不是足以合理化一切吗？”如果不从物理学中了解混沌，你可以使用“<a href="https://en.wikipedia.org/wiki/Butterfly_effect">蝴蝶效应</a>”替代之。</p>
+<blockquote>
+<p>The flap of a butterfly's wings in Brazil set off a tornado in Texas.</p>
+<p>——Edward N. Lorenz</p>
+</blockquote>
+<p>个人在自然、社会、历史中的能力顶破天，也就是顺应大潮了。从某种程度上来说，人类已经把人类文明养成了一个庞然巨物。经由长期的自我教育，你才勉强均匀地了解它。在未涉足的领域，不断地爆发着你无法预料的新知。混沌论告诉我们，守好分内寸土即可。</p>
+<p>在2023-04-30的10:00左右，我在白金汉爵大酒店第12层的某个房间里，透过（近）落地窗俯瞰下面的街景，惊喜地发现了我在初到上海的时候所住的魔方9号楼。远在2021-06，我对科研有着绝对的纯粹。老板放不放实习？无所谓！科研失败以致于把号练废了？无所谓！因为没有科研基础，我踩遍了科研所有的坑。对同学“找老婆比搞科研更重要”的贯耳魔音，我不屑一顾。在半个月之后，我认识了一个女生、谈甜甜的恋爱、谈苦苦的恋爱。咚！咚！咚！四月之声。爱灰飞烟灭。在进上海交通大学之前，我要写一手好代码；2022年，聆听中华大地此起彼伏的悲鸣……疫情、小行星撞地球，这是大的混沌；又一个明星塌房了、又一个博士自杀了，这是小的混沌。如果知道自己能力的边界在哪（“见自己”的必要条件），则在边界之外的世界均为混沌。</p>
+<p>一言以蔽之，<strong>混沌论放弃未来</strong>。</p>
+<p>注意，“混沌论放弃未来”与消极没有关系，因为你只需要通过决定论和概率论决定现在，就决定了自己的绝大部分未来。混沌论所放弃的未来是未知的未来。其放弃是一种减少精神内耗（不切实际的完美主义）的放弃，而不是自暴自弃。</p>
+<h3 id="3-现实意义"><a class="header" href="#3-现实意义">3. 现实意义</a></h3>
+<p>方程存在唯一解、方程存在无穷多解、方程无解是<strong>数学意义</strong>。那么，多元一次方程组映射至平凡之路的<strong>现实意义</strong>是什么呢？</p>
+<p>和《下篇：自我教育/2 数学/1 凡人皆需数学》类似：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span></span></p>
+<p>矩阵 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 表示<strong>目标的背景情况</strong>（比如条件、约束、个人基础）；向量 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> 表示<strong>解决方案</strong>；向量 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 表示<strong>目标</strong>。</p>
+<p>继续结合前文《下篇：自我教育/2 数学/3 人生模型》，正定对应求而得、欠定对应不求而得、超定对应求而不得。</p>
+<p>建立数学模型往往是难的，但你不需要把每个目标析构一遍。在学习数学的过程中，你将在数域的扩充中潜移默化地感受数学整套<strong>形式化框架</strong>的搭建、“在难题中潜移默化地感受以比较长的<strong>因果链</strong>解决朴素、简洁、和人生意义八竿子打不着的难题”、<strong>数学思想</strong>将自然而然地成为独立思考的利器。就“正定”而言，它告诉你：“假如你清晰地认识了目标的背景情况 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 、清晰地给出了解决方案 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> ，那么结局 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 已经注定了。”或者反其道而用之，假如你清晰地认识了目标的背景情况 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 、清晰地给出了合理的目标 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> ，那么你所需要做的事情有且仅有“相信自己只要将合理的解决方案执行到位，成功水到渠成”。或者马后炮地说，假如你失败了，把 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 玩成了 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span></span></span></span> ，你可以修正你的认知体系，从 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 重定向至 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span></span></span></span> 。</p>
+<p>我们可以从“定”出发，看看不经自我教育洗礼的国产大一新生如何犯错：</p>
+<ul>
+<li><strong>沉迷奶头乐</strong>。在一个制作国民级手游的团队里，有多少心理学博士？任何土生土长的做题人，在一考定终身、学而优则仕的持续洗脑下，不可能没有尝试过逆袭。引用一个大家更加熟悉的表达“间歇性踌躇满志；持续性混吃等死”。暂且不说别人，单单我自己便在半年前才注销了王者荣耀的账号。不妨将“踌躇满志”作为目标 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 的一部分，我们看不到“持续性踌躇满志”需要与一堆北京师范大学心理学博士为敌。也就是说，在沉迷奶头乐的土生土长做题人眼中， <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 的 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 与北京师范大学心理学博士毫无关联。按照上文的“假如你失败了，把 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 玩成了 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span></span></span></span> ，你可以修正你的认知体系，从 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 重定向至 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span></span></span></span> ”， <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> 至少多一维“北京师范大学心理学博士的PUA”；相应的 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span></span></span></span> 至少多一维“防止北京师范大学心理学博士的PUA”。这未必可以解决“持续性混吃等死”这一问题，但至少提供了解决它的可能性。随着你的认知水平越来越高， <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.1056em;"></span><span class="mord">...</span></span></span></span> ，成功也近在咫尺了。</li>
+<li><strong>只见树叶，不见树</strong>。标准的国产大一新生可能有一个学习收藏夹（比如知乎、哔哩哔哩、小红书），里面放了很多学习资料。它们可能是清北做题家分享的应试技巧、可能是双非黑马逆袭的考研经验贴、可能是知识区博主的书单和万字解析。<a href="https://en.wikipedia.org/wiki/White_Album_2">为什么我猜得这么熟练啊！？</a>不妨将《下篇：自我教育/2 数学/3 人生模型》最宏大的目标函数“度过幸福的一生”作为 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 的 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 。在服务于此目标的 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 中，至少有一些矩阵元素属于学习资料（即学习收藏夹所存放的内容）。暂且忽略“放进收藏夹吃灰”的行为艺术，它们足不足以纳入矩阵 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 呢？答案是否定的。假如 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 仅仅对应考上985、考研上岸、每年读10本书这种目标，将App收藏夹的学习资料作为 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 的元素是OK的，但对于“度过幸福的一生”，这些从全知之树飘落的信息碎片便不足够了。换言之，你的信息素养无法为自己的目标 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 提供一个适配的矩阵 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> ，使之辅以可行的解决方案 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> 达成目标。</li>
+<li><strong>无法大事化小，小事化无</strong>。假设已经建立了某个目标的正定模型，即目标的背景情况被映射至 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> ，目标被映射至 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> ，且 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 存在唯一解。你会解 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> 吗？在前面所举的例子（二元一次方程组）中，矩阵和向量的维度是很小的，所以你可以通过“消元法”，甚至一眼看出 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span></span></span></span> 。但是，当矩阵 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 是 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span></span></span></span> 的规模，你应该就需要诸如 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mspace"> </span><span class="mord mathnormal">b</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace"> </span><span class="mord mathnormal">x</span><span class="mclose">]</span></span></span></span> 的解法了；当矩阵 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 是 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5000</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4000</span></span></span></span> 的规模，你应该只能通过计算机求解了。线性方程组的“消元法 → 初等变换法 → 编程法”的升级，其最自然、最高效、收敛性最强的打开方式正是“学习数学”，而“度过幸福的一生”的“消元法 → 初等变换法 → 编程法”的升级，自然、高效、具有收敛性的打开方式之一是“见天地”、“见众生”、“见自己”。</li>
+</ul>
+<p>照应前文，<strong>任何平凡的生活方式均存在完整的复刻路径；任何伟大的生活方式均不可能通过路径依赖实现</strong>。平凡之路反反复复地出现。它的充分条件反反复复地出现；它的必要条件反反复复地出现；它的充要条件反反复复地出现。本文再出现一次。结合<a href="https://en.wikipedia.org/wiki/68-95-99.7_rule">68–95–99.7 rule</a>，我们可以将在概率论中发生概率不低于95%的事件近似地纳入决定论的范畴，比如上文所提到的“考研南昌大学，成功率98%”。只要你的 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 模型近似正确，该事件近似为必然事件。精通正定的决定论、欠定的概率论、超定的混沌论，在68–95–99.7 rule之下，是平凡之路的充分条件，也是伟大之路的必要条件。平庸的人不懂得控制欲望，以致于矩阵 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 的秩自发地猛涨。</p>
+<p>假设矩阵 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 的秩是 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span> 、向量 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> 的维度是 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> ，当 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> 时，关于目标 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 的线性方程组是正定的。理性缺缺的人类，一旦实现了一两个小目标，秩往往涨三四个维度，所以永远无法满足膨胀的欲望。或者，平庸的人习惯于阉割目标 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> ，从而减秩。从方法论的层面来看，超定之苦的解决之道分为<strong>开源</strong>和<strong>节流</strong>。</p>
+<ul>
+<li><strong>开源</strong>：增加向量 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> 的维度 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> （解决方案的“穷则变、变则通、通则久”）。</li>
+<li><strong>节流</strong>：降低矩阵 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 的秩 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span> （注意，只是降秩，而不是减少矩阵的行数，否则阉割了目标 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> ）。</li>
+</ul>
+<p>当 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> <strong>略大于</strong> <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span> 时，目标具有比较高的可行性。</p>
+<ul>
+<li>“大于”即存在解。</li>
+<li>“略”保证了 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord">...</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 的 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> 不会太大。</li>
+</ul>
+<h2 id="0x03-决策"><a class="header" href="#0x03-决策">0x03 决策</a></h2>
+<p>本节的理论依据是《概率论与数理统计》。最核心的知识点仍然是<a href="https://github.com/Anticorianderist/blog/blob/main/1-src/1-information-flow/1-read/fooled-by-randomness-the-very-simplified-probability-theory.md">《随机漫步的傻瓜：极简概率论》</a>和<a href="https://github.com/Anticorianderist/de-vegetable/blob/main/1-src/2-self-educations/2-math/1-everyone-needs-math.md">《下篇：自我教育/2 数学/1 凡人皆需数学》</a>的数学期望。</p>
+<p>其它内容（最大似然估计、均值回归等）暂时不展开。</p>
+<h2 id="0x04-计划"><a class="header" href="#0x04-计划">0x04 计划</a></h2>
+<p>对于给定的目标，计划包括三要素：现状、目标和策略。</p>
+<h3 id="1-现状"><a class="header" href="#1-现状">1. 现状</a></h3>
+<p>以高考为例：</p>
+<ul>
+<li><strong>见自己（主观）</strong>：硬实力和软实力。
+<ul>
+<li><strong>硬实力</strong>：（语文）写作水平如何？记忆力怎么样？（数学）小学数学学得怎么样？初中数学学得怎么样？（英语）词汇量？听说读写？</li>
+<li><strong>软实力</strong>：应试体系什么水平？认知能力？信息素养？情绪管理？执行力（自律）？</li>
+</ul>
+</li>
+<li><strong>见天地（客观）</strong>：外力和阻力。
+<ul>
+<li><strong>外力</strong>：教辅资源？是否有做题家的兄弟姐妹？</li>
+<li><strong>阻力</strong>：高中笨比老师的数量？寝室环境和室友？</li>
+</ul>
+</li>
+<li><strong>见众生（随机性）</strong>：人事物。
+<ul>
+<li><strong>人</strong>：数学大小年？</li>
+<li><strong>事</strong>：新冠突发？试卷被龙卷风刮跑了？临考生病了？</li>
+<li><strong>物</strong>：考场的文具不好用？考试桌椅晃？空调的温度不合适？</li>
+</ul>
+</li>
+</ul>
+<p>为什么说高考（考试）相对简单呢？但凡把考研换成别的事情，带来随机性的人事物就完全不一样了。</p>
+<ul>
+<li><strong>人</strong>：傻逼领导；空降的关系户；被Donald Trump或Joe Biden制裁。</li>
+<li><strong>事</strong>：新冠突发；亲人生病。</li>
+<li><strong>物</strong>：笔记本突然死机；U盘坏了；闹钟没响！</li>
+</ul>
+<h3 id="2-目标"><a class="header" href="#2-目标">2. 目标</a></h3>
+<p><strong>清晰</strong>。烂的目标：考入上交计算机系；好的目标：高考675+分。低分或高分被录取、大小年，这些不清晰的元素使得“考入上交计算机系”对应的状态非常模糊。</p>
+<p><strong>实际</strong>。烂的目标：备考时间1个月，考入清华计算机系；好的目标：裸考分数是多少？分数增长曲线是什么？有效备考时间是多少？目标分数是多少？需要强调的是，如果明确地知道一个目标的成功率是<code>20%</code>，而且愿意接受<code>80%</code>的失败风险，那么它仍然是很实际的目标。对成功率的估计和实际成功率越接近，目标越实际。</p>
+<p><strong>可变</strong>。常立志是立长志的前提。有一句老话，“无志者常立志，有志者立长志”。但是，没有人可以早早地在不知行的情况下树立终身行之的人生目标。好的目标必须经得起修改，也只有不断的修改，才能确定“求仁得仁”的“仁”。良性的修改：修改的幅度越来越小，直至稳定。</p>
+<h3 id="3-策略"><a class="header" href="#3-策略">3. 策略</a></h3>
+<p><strong>车到山前必有路，船到桥头自然直</strong>。策略由现状和目标决定，存在可执行方案是常态。此外，可以放弃目标。失败而已，没什么大不了。不要妄自菲薄；不要沉浸在焦虑等负面情绪中；不要在不理智的时候作出影响人生进程的重大抉择。</p>
+<p><strong>图式</strong>。这是一个心理学概念，将其替换成维度或许更合适。思考问题的维度越高，备选策略越丰富。图式越复杂，认知水平越高，策略越多，且剪枝能力越强。以高考数学为例，如果只在初等数学里折腾，高考那道压轴题永远会是一道坎，但如果某些人已经提前学完了微积分呢？降维打击。</p>
+<h2 id="0x05-成败"><a class="header" href="#0x05-成败">0x05 成败</a></h2>
+<h3 id="1-悖论"><a class="header" href="#1-悖论">1. 悖论</a></h3>
+<p>上文的最后一节也解构成败。本小节顺着《线性代数》“定”的视角继续解构决策的成败。</p>
+<p>一个决策正确与否取决于每个人对正误的定义；而决策的数量则取决于每个人对决策的定义。</p>
+<ul>
+<li><strong>决策</strong>：站在人生的岔路口，我清晰地看到眼前有很多条路。沉思良久，我选择了其中之一。</li>
+<li><strong>正误</strong>：我选了A，但到头来却发现，我应该选B。</li>
+</ul>
+<p>为什么要强调“决策”和“正误”的定义呢？极端地说，我们的人生是一道又一道的选择题。你下一刻可以哭，也可以笑。你下一刻可以打开抖音，也可以打开王者荣耀。我们无时无刻不在作决策。如果我们对决策的标准宏大一些：选哪所初中；选哪所高中；高考填志愿；大一转专业；未来出国、保研、考研、考公、就业还是创业。在前文的定义下，人的决策不多，而且判断决策的正误很难。没有岔路口，某个行为算不上决策；未经过足够的思考，某个选择也算不上决策；先有决策，后有正误，而且正误成立的前提是“你较为准确地预见了其它选择的未来”。</p>
+<ul>
+<li><strong>错误的决策避无可避</strong>。初期，基于极低的认知水平和极差的信息素养（包括信息差），作出所谓“错误”的决策再正常不过。</li>
+<li>决策的属性之一是“<strong>走完了这段路，才可能知道决策的正误</strong>”。比如，本科的一些课程，我只想考六十分，但怕挂科，所以稍微多浪费了一些时间复习。矛盾之处在于“在没考之前，我不可能知道考试水不水、有多水”。</li>
+</ul>
+<h3 id="2-bayes-theorem"><a class="header" href="#2-bayes-theorem">2. <a href="https://en.wikipedia.org/wiki/Bayes&#x27;_theorem">Bayes' Theorem</a></a></h3>
+<p>本小节顺着《概率论与数理统计》Bayes' Theorem的视角继续解构决策的成败。</p>
+<p>成功和失败都是一种信息。失败可以用于修正错误的认知。</p>
+<ul>
+<li>在拥有结果（成败）这一信息B之前， <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mclose">)</span></span></span></span> 。</li>
+<li>在拥有结果（成败）这一信息B之后， <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.53em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">P</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span><span class="mclose mtight">)</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">P</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">A</span><span class="mbin mtight">∩</span><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> 。</li>
+</ul>
+<p>在形式化的层面上，结果的本质是一样的，即<a href="https://github.com/Anticorianderist/blog/blob/main/1-src/2-the-negation-of-negation/2-dedust/attribution-determining-the-boundary-of-inward-and-outward.md">通过实践所产生的先验信息</a>。参考神经网络的训练过程，神经网络才不会因为误差的大小黯然神伤。它只会无情地执行最优化过程。</p>
+<h2 id="0x06-迭代"><a class="header" href="#0x06-迭代">0x06 迭代</a></h2>
+<p>这涉及工科生不一定学的《数值计算》。它融合了《微积分》的敛散性、《线性代数》的“数据结构”（向量和矩阵）和《概率论与数理统计》的统计规律性。因此，本节不展开《数值计算》的术语。以第一节的时间管理为例：</p>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/anticorianderist-evernote-excerpt.png" alt="anticorianderist-evernote-excerpt.png" /></p>
+<p>从这张图，你们可以得到哪些信息？</p>
+<ul>
+<li><strong>2019</strong>：又是一年新气象，心血来潮，写写日记吧！写了10天，烂尾了。</li>
+<li><strong>2020</strong>：多了笔记本《目标 to 任务》。</li>
+<li><strong>2021</strong>：只写了60篇日记，《目标 to 任务》没了。</li>
+<li><strong>2022</strong>：每天都写了日记，多了笔记本《Bucket List》。</li>
+<li><strong>2019-01-01</strong>：上午报废；下午低效地学了3h；晚上学了2.5h（效率一般）。</li>
+</ul>
+<p>所谓的时间管理大师，不是一开始就是时间管理大师，而是：</p>
+<ul>
+<li>毫无计划可言，粗略地记录当天干嘛了。</li>
+<li>因为考试周，所以学了半天（否则可能一点也没学），但学习模式问题很大，有点拖延症加形式主义。</li>
+<li>这甚至不是最初的版本，我2021年将所有日记的格式整改了一遍。早期日记的字体、章节、缩进、以及为了不断更的灌水等等，比上述版本更烂。</li>
+</ul>
+<p>如果你想通过日记驱动自我管理，不妨从“记录”开始。单单记录，你就可以感受到自己荒废了多少光阴。</p>
+<p>2019-01-01：第1篇日记</p>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/anticorianderist-dairy-2019-01-01-excerpt.png" alt="anticorianderist-dairy-2019-01-01-excerpt.png" /></p>
+<p>2019-03-04：第1篇考研日记</p>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/anticorianderist-dairy-2019-03-04-excerpt.png" alt="anticorianderist-dairy-2019-03-04-excerpt.png" /></p>
+<p>2019-05-01：奇怪的插曲</p>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/anticorianderist-dairy-2019-05-01-excerpt.png" alt="anticorianderist-dairy-2019-05-01-excerpt.png" /></p>
+<p>2019-06-20：出现了，计划！</p>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/anticorianderist-dairy-2019-06-20.png" alt="anticorianderist-dairy-2019-06-20.png" /></p>
+<p>再看看考研二战期间的顶级生产力：</p>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/anticorianderist-dairy-2020-10-07.png" alt="anticorianderist-dairy-2020-10-07.png" /></p>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/anticorianderist-dairy-2020-10-24.png" alt="anticorianderist-dairy-2020-10-24.png" /></p>
+<p><img src="https://raw.githubusercontent.com/Anticorianderist/de-vegetable/main/assets/figures/anticorianderist-dairy-2020-12-24.png" alt="anticorianderist-dairy-2020-12-24.png" /></p>
+<p>最后才是第一节的形态。</p>
+<p>迭代的前提是“敛散性”。其核心要素是迭代法及其迭代步长。</p>
+<h2 id="0x07-求仁得仁"><a class="header" href="#0x07-求仁得仁">0x07 求仁得仁</a></h2>
+<p>本文泛化了《下篇：自我教育/2 数学/1 凡人皆需数学》的第1节“引例：最高年薪”并详细地展开了《下篇：自我教育/2 数学/3 人生模型》的第3节“求仁得仁”。基于“目标 to 任务”的时间管理，我在“每个目标的各个周期”和“目标与目标的衔接”中使用了一些的数学定义和数学思想。“目标模型”从本质上是“做成一件事情”的抽象。</p>
+<ol>
+<li><strong>可行性分析</strong>：事情能不能做成？内部条件和外部条件是否充分？</li>
+<li><strong>决策</strong>：可以做成的事情很多，做哪些呢？</li>
+<li><strong>计划</strong>：将大事拆解成小事，每天只需要搬砖就行了。</li>
+<li><strong>成败</strong>：人不应该总是做胜券在握的事情，因为那样放弃了走出舒适区所遇到的可能性。既然如此，如何接纳失败，并从失败中获得成功的养料？</li>
+<li><strong>迭代</strong>：如果以每个目标为一次完整的训练周期，如何将实践目标所得到的成长作用于下一个目标？</li>
+</ol>
+<p>在以上“做成一件事情”的核心步骤中注入数学的力量，整个目标模型的归宿是“求仁得仁”。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../2-self-educations/2-math/3-life-model.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../2-self-educations/2-math/5-math-and-beyond.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../2-self-educations/2-math/3-life-model.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../2-self-educations/2-math/5-math-and-beyond.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>见天地 - 新生：从伪教育到自我教育</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../1-preface-to-you-like-me.html">序：致和我相似的你</a></li><li class="chapter-item expanded affix "><li class="part-title">上篇：伪教育</li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/1-family-education.html"><strong aria-hidden="true">1.</strong> 家庭教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/2-exam-oriented-education.html"><strong aria-hidden="true">2.</strong> 应试教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/3-higher-education.html"><strong aria-hidden="true">3.</strong> 高等教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/4-social-education.html"><strong aria-hidden="true">4.</strong> 社会教育</a></li><li class="chapter-item expanded affix "><li class="part-title">下篇：自我教育</li><li class="chapter-item expanded affix "><li class="part-title">知行</li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/1-knowing-the-world.html" class="active"><strong aria-hidden="true">5.</strong> 见天地</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/2-knowing-the-people.html"><strong aria-hidden="true">6.</strong> 见众生</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/3-knowing-yourself.html"><strong aria-hidden="true">7.</strong> 见自己</a></li><li class="chapter-item expanded affix "><li class="part-title">数学</li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/1-everyone-needs-math.html"><strong aria-hidden="true">8.</strong> 凡人皆需数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/2-elementary-math.html"><strong aria-hidden="true">9.</strong> 初等数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/3-life-model.html"><strong aria-hidden="true">10.</strong> 人生模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/4-goal-model.html"><strong aria-hidden="true">11.</strong> 目标模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/5-math-and-beyond.html"><strong aria-hidden="true">12.</strong> 数学与数学之外</a></li><li class="chapter-item expanded affix "><li class="part-title">马克思主义哲学</li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/1-materialism.html"><strong aria-hidden="true">13.</strong> 唯物论</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/2-two-features.html"><strong aria-hidden="true">14.</strong> 两个特征</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/3-three-laws.html"><strong aria-hidden="true">15.</strong> 三大规律</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/4-five-contradictions.html"><strong aria-hidden="true">16.</strong> 五对范畴</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/5-epistemology.html"><strong aria-hidden="true">17.</strong> 认识论</a></li><li class="chapter-item expanded affix "><li class="part-title">人际关系</li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/1-three-levels.html"><strong aria-hidden="true">18.</strong> 三种层次</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/2-three-types.html"><strong aria-hidden="true">19.</strong> 三种类别</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/3-begin.html"><strong aria-hidden="true">20.</strong> 知所起</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/4-end.html"><strong aria-hidden="true">21.</strong> 离别</a></li><li class="chapter-item expanded affix "><li class="part-title">异性关系</li><li class="chapter-item expanded "><div><strong aria-hidden="true">22.</strong> 底层模型</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">23.</strong> 通用版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">24.</strong> 女生版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">25.</strong> 男生版</div></li><li class="chapter-item expanded affix "><li class="part-title">它山之石</li><li class="chapter-item expanded "><div><strong aria-hidden="true">26.</strong> 好奇心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">27.</strong> 自信心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">28.</strong> 解耦合</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">29.</strong> 取舍</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">30.</strong> 美育</div></li><li class="chapter-item expanded affix "><li class="part-title">信息素养</li><li class="chapter-item expanded "><div><strong aria-hidden="true">31.</strong> 这是最好的时代</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">32.</strong> 极简信息论</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">33.</strong> 阅读理解</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">34.</strong> 英语</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">35.</strong> 像硅基生命一样思考</div></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../2-epilogue-to-me-like-you.html"><strong aria-hidden="true">36.</strong> 后记：致和你相似的我</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../3-acknowledgments.html">致谢</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">新生：从伪教育到自我教育</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="下篇自我教育1-知行1-见天地"><a class="header" href="#下篇自我教育1-知行1-见天地">下篇：自我教育/1 知行/1 见天地</a></h1>
+<h2 id="0x01-何谓天地"><a class="header" href="#0x01-何谓天地">0x01 何谓“天地”</a></h2>
+<blockquote>
+<p><em>主观能动性</em>：人的主观意识和实践活动对于客观世界的能动作用。</p>
+</blockquote>
+<p>在本书的定义中，<strong>天地</strong>：在剥离了具有主观能动性的人之后，所剩余的整个世界。</p>
+<blockquote>
+<p><em>真理</em>：对客观事物及其规律的正确反映。</p>
+</blockquote>
+<p>在本书的定义中，<strong>见天地</strong>：了解“天地”所有的组成部分，或多或少地涉猎之。</p>
+<h2 id="0x02-通识教育"><a class="header" href="#0x02-通识教育">0x02 通识教育</a></h2>
+<p>以<a href="https://yz.chsi.com.cn/zyk/">学术型硕士</a>的专业为例：</p>
+<ul>
+<li>哲学
+<ul>
+<li>马克思主义哲学</li>
+<li>中国哲学</li>
+<li>外国哲学</li>
+<li>逻辑学</li>
+<li>伦理学</li>
+<li>美学</li>
+<li>宗教学</li>
+<li>科学技术哲学</li>
+</ul>
+</li>
+<li>经济学
+<ul>
+<li>理论经济学</li>
+<li>应用经济学</li>
+<li>统计学</li>
+</ul>
+</li>
+<li>法学
+<ul>
+<li>政治学</li>
+<li>社会学</li>
+<li>民族学</li>
+<li>马克思主义理论</li>
+<li>公安学</li>
+</ul>
+</li>
+<li>教育学
+<ul>
+<li>教育学</li>
+<li>心理学</li>
+<li>体育学</li>
+</ul>
+</li>
+<li>文学
+<ul>
+<li>中国语言文学</li>
+<li>外国语言文学</li>
+<li>新闻传播学</li>
+</ul>
+</li>
+<li>历史学
+<ul>
+<li>考古学</li>
+<li>中国史</li>
+<li>世界史</li>
+</ul>
+</li>
+<li>理学
+<ul>
+<li>数学</li>
+<li>物理学</li>
+<li>化学</li>
+<li>天文学</li>
+<li>地理学</li>
+<li>大气科学</li>
+<li>海洋科学</li>
+<li>地球物理学</li>
+<li>地质学</li>
+<li>生物学</li>
+<li>系统科学</li>
+<li>科学技术史</li>
+<li>生态学</li>
+<li>统计学</li>
+<li>心理学</li>
+<li>力学</li>
+<li>材料科学与技术</li>
+<li>电子科学与技术</li>
+<li>计算机科学与技术</li>
+<li>环境科学与工程</li>
+<li>生物医学工程</li>
+<li>基础医学</li>
+<li>公共卫生与预防医学</li>
+<li>药学</li>
+<li>中药学</li>
+<li>医学技术</li>
+<li>护理学</li>
+</ul>
+</li>
+<li>工学
+<ul>
+<li>力学</li>
+<li>机械工程</li>
+<li>光学工程</li>
+<li>仪器科学与技术</li>
+<li>材料科学与工程</li>
+<li>冶金工程</li>
+<li>动力工程及工程热物理</li>
+<li>电气工程</li>
+<li>电子科学与技术</li>
+<li>信息与通信工程</li>
+<li>控制科学与工程</li>
+<li>计算机科学与技术</li>
+<li>建筑学</li>
+<li>土木工程</li>
+<li>水利工程</li>
+<li>测绘科学与工程</li>
+<li>化学工程与技术</li>
+<li>地质资源与地质工程</li>
+<li>矿业工程</li>
+<li>石油与天然气工程</li>
+<li>纺织科学与工程</li>
+<li>轻工技术与工程</li>
+<li>交通运输工程</li>
+<li>船舶与海洋工程</li>
+<li>航空宇航科学与技术</li>
+<li>兵器科学与技术</li>
+<li>核科学与技术</li>
+<li>农业工程</li>
+<li>林业工程</li>
+<li>环境科学与工程</li>
+<li>生物医学工程</li>
+<li>食品科学与工程</li>
+<li>城乡规划学</li>
+<li>风景园林学</li>
+<li>软件工程</li>
+<li>生物工程</li>
+<li>安全科学与工程</li>
+<li>公安技术</li>
+<li>网络空间安全</li>
+<li>科学技术史</li>
+<li>管理科学与工程</li>
+<li>设计学</li>
+</ul>
+</li>
+<li>农学
+<ul>
+<li>作物学</li>
+<li>园艺学</li>
+<li>农业资源与环境</li>
+<li>植物保护</li>
+<li>畜牧学</li>
+<li>兽医学</li>
+<li>林学</li>
+<li>水产</li>
+<li>草学</li>
+<li>科学技术史</li>
+<li>环境科学与工程</li>
+<li>食品科学与工程</li>
+<li>风景园林学</li>
+</ul>
+</li>
+<li>医学
+<ul>
+<li>基础医学</li>
+<li>临床医学</li>
+<li>口腔医学</li>
+<li>公共卫生与预防医学</li>
+<li>中医学</li>
+<li>中西医结合</li>
+<li>药学</li>
+<li>中药学</li>
+<li>特种医学</li>
+<li>医学技术</li>
+<li>护理学</li>
+<li>科学技术史</li>
+<li>生物医学工程</li>
+</ul>
+</li>
+<li>军事学
+<ul>
+<li>军事思想及军事历史</li>
+<li>战略学</li>
+<li>战役学</li>
+<li>战术学</li>
+<li>军队指挥学</li>
+<li>军制学</li>
+<li>军队政治工作学</li>
+<li>军事后勤学</li>
+<li>军事装备学</li>
+<li>军事训练学</li>
+</ul>
+</li>
+<li>管理学
+<ul>
+<li>管理科学与工程</li>
+<li>工商管理</li>
+<li>农林经济管理</li>
+<li>公共管理</li>
+<li>图书情报与档案管理</li>
+</ul>
+</li>
+<li>艺术学
+<ul>
+<li>艺术学理论</li>
+<li>音乐与舞蹈学</li>
+<li>戏剧与影视学</li>
+<li>美术学</li>
+<li>设计学</li>
+</ul>
+</li>
+</ul>
+<p>报菜名报了一百五十多行，但我还没有报完呢！</p>
+<ul>
+<li>
+<p>理学</p>
+<ul>
+<li>地球物理学
+<ul>
+<li>固体地球物理学</li>
+<li>空间物理学</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>工学</p>
+<ul>
+<li>计算机科学与技术
+<ul>
+<li>计算机系统结构</li>
+<li>计算机软件与理论</li>
+<li>计算机应用技术</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-是什么"><a class="header" href="#1-是什么">1. 是什么</a></h3>
+<p>问：什么是通识教育？</p>
+<p>答：<strong>零级学科，都学一点。</strong></p>
+<ul>
+<li><strong>零级学科</strong>：学位的前两个字。比如，我在本科毕业之后是<strong>理学</strong>学士、在硕士毕业之后是<strong>工学</strong>硕士。</li>
+<li><strong>一级学科</strong>：本科专业。比如，我大一上学期的专业是<strong>工学の勘查技术与工程（应用地球物理）</strong>、大一下学期的专业是<strong>理学の地球物理学</strong>。</li>
+<li><strong>二级学科</strong>：硕士专业。比如，我考研报名的专业是<strong>工学の电子信息の计算机技术</strong>。</li>
+</ul>
+<p><a href="https://en.wikipedia.org/wiki/Howard_Gardner">Howard Gardner</a>提出了<a href="https://en.wikipedia.org/wiki/Theory_of_multiple_intelligences">多元智能理论</a>，多元智能包括：语文智能、数理逻辑智能、空间智能、肢体动觉智能、音乐智能、人际智能、内省智能、自然智能。</p>
+<p>饱受应试教育摧残的做题人最悲惨的地方在哪呢？<strong>自然智能和数理逻辑智能决定命运。前者所形成的正反馈影响了好奇心和求知欲；后者所形成的正反馈影响了自信心和好胜心。<strong>假如你爸妈从不打麻将，闲着没事只看《动物世界》“春天到了，万物复苏，又到了交配的季节”，这对你的</strong>自然智能</strong>影响极大；类似地，在学校的时候是不是经常被老师夸，这对一个人的<strong>数理逻辑智能</strong>影响极大。</p>
+<p>问：什么是通识教育？</p>
+<p>答：<strong>多元智能，都发展一点。</strong></p>
+<h3 id="2-为什么"><a class="header" href="#2-为什么">2. 为什么</a></h3>
+<ul>
+<li><strong>如果出生于非高知家庭，你几乎无法获得正常的通识教育</strong>。得数理逻辑者，得应试教育。经过初高中的筛选，至少一半的小镇错题本失去了获得本科教育的机会；进入了大学的小镇做题家因为无人指导、无人监督，不少人浑浑噩噩地浪费生命。单从这两点来看，至少90%的学生与通识教育无缘。剩下不到10%的人，又有超过80%的人盲目地跟着培养方案卷GPA、保研资格。所以，“2%的人可以获得正常的通识教育”已经是非常乐观的估计了。</li>
+<li><strong>如果父辈给予的资源有限，你几乎必须经由通识教育重塑自己</strong>。没读过大学的小镇错题本一般过着怎么样的人生？读过大学，但混完了四年的小镇做题家过着怎么样的人生？在大学里卷了四年的小镇做题家又过着怎么样的人生？从两个维度出发，应试教育的失败者往往在经济状况上低人一等；应试教育的成功者即使在经济状况上优于失败者，但仍然难以精神独立。</li>
+<li><strong>任何人可以经由互联网，获得够用的通识教育</strong>。我是一个极好的例子。为了上学走十几里山路，我也不是没走过；我七年级才接触正式的英语课；我在国家级贫困县的县中备战高考；我的父母分别是初中学历与小学学历；我的本科学校坐落于日渐衰弱的大东北；受限于认知和眼界，我本科常年浪费时间；凡此种种，我从来没有受过优质的教育，但我经由互联网完成了自我教育，也获得了足够的通识教育。“足够”的标准因人而异，在不知道自己的标准之前，你可以参考后文的必要条件。</li>
+<li><strong>一个显著的误区，“有用之用”被视作“无用之用”</strong>。在做题人的眼中，“有用之用”包括：分数、排名、老师所讲的知识和题目、亲友、一路建立的各种人脉等；“无用之用”包括：打游戏、读闲书、看风景等。我先不加论证地告诉你，一切皆有用。你认为某些人事物无用，往往是因为认知水平不够高。彻底理解本书的重要指标之一：任何经历于你，都“有用”；生活是最好的教科书。</li>
+</ul>
+<h3 id="3-通才全才专才和怪才"><a class="header" href="#3-通才全才专才和怪才">3. 通才、全才、专才和怪才</a></h3>
+<p>从通识教育出发，重新定义几个名词：</p>
+<ul>
+<li><strong>通才</strong>：顶级通识教育。通才博闻广知，足以窥探人类所有的精神文明。</li>
+<li><strong>全才</strong>：通才的“早期版本”。早期，因为知识的总量不多，所以某些所谓的“往圣”同时在诸多领域中做出了杰出的贡献。代表人物是具有哲学家、科学家、教育家、思想家一众头衔的<a href="https://en.wikipedia.org/wiki/Aristotle">亚里士多德</a>。他在自然科学与社会科学乃至艺术中都取得了非常高的成就；还有<a href="https://en.wikipedia.org/wiki/John_von_Neumann">冯·诺依曼</a>，数学家、计算机学家、物理学家、化学家，在“泛”自然科学中取得了非常高的成就。随着近现代生产力飞速地提高，尤其计算机科学与技术的发展，混杂了知识和噪音的信息指数级增长，导致了“这个时代没有全才”。</li>
+<li><strong>专才</strong>：通识教育不够，但在某个领域中特别杰出。比如，“文化昆仑”钱钟书的高考数学只考了15分。类比数学的<a href="https://en.wikipedia.org/wiki/Closure_(mathematics)">封闭性</a>解释之，知识存在一定的封闭性。不严谨地假设“通识教育 = 科学 + 艺术、科学 = 自然科学 + 社会科学，故‘通识教育 = 自然科学 + 社会科学 + 艺术’。钱钟书在社会科学与艺术中满足“封闭性”，拓宽了社会科学与艺术的边界。即，虽然钱钟书的自然科学不及格，但社会科学与艺术的知识具有封闭性，其拓宽不依赖自然科学的知识。</li>
+<li><strong>怪才</strong>：专才的“小众版本”。某些专才性格怪癖，极度符合吃瓜群众对于天才的刻板印象，比如<a href="https://movie.douban.com/subject/2156528/"><em>The Big Bang Theory</em></a>的谢尔顿。有些“钱钟书”学不明白数学；有些“钱钟书”不善于经营人际关系。怪才只是沟通成本极高的专才。</li>
+</ul>
+<p>上世纪80年代的绝大多数大学生是勤奋刻苦的“伪”通才兼“半”专才。在各行各业急需人才的时代背景下，ta们占据了存量极大的优质岗位。官僚化、学阀化使出生于2000年前后的几代人非常卷。但是，<strong>“真”通才兼“全”专才在任何地区的任何时代都是稀缺资源</strong>。我认为，做题人的最优解：<strong>在本科期间成为通才；选择某个二级学科，保研或考研至清北华五的研究生院；在研究生期间成为专才</strong>。对于愿意出国且可以出国的人，出国优先。</p>
+<h2 id="0x03-站在不吃香菜的肩膀上"><a class="header" href="#0x03-站在不吃香菜的肩膀上">0x03 站在不吃香菜的肩膀上</a></h2>
+<p>作为一个幸运的“准”通才，我学过的课程包括：</p>
+<ul>
+<li><strong>哲学</strong>：清华大学的<a href="https://www.xuetangx.com/course/THU12011001060/16904967">《逻辑学概论》</a>，没看完；耶鲁大学的<a href="https://oyc.yale.edu/death/phil-176">《死亡》</a>，没看完；考研政治级别的《马克思主义哲学》。</li>
+<li><strong>经济学</strong>：复旦大学的<a href="https://www.xuetangx.com/course/FUDAN02011000064/1161523">《经济学原理》</a>，没看完。</li>
+<li><strong>法学</strong>：考研政治级别的《马克思主义政治经济学》。</li>
+<li><strong>教育学</strong>：清华大学的<a href="https://www.xuetangx.com/course/THU07111000416/5881427">《心理学概论》</a>；清华大学的<a href="https://www.xuetangx.com/course/THU07111000433/16906166">《职业探索与选择》</a>；哈尔滨工业大学的<a href="https://www.xuetangx.com/course/HIT01011000109/16904971">《自我认知与情绪管理》</a>，没看完。</li>
+<li><strong>文学</strong>：几十本经典名著。</li>
+<li><strong>历史学</strong>：清华大学的<a href="https://www.xuetangx.com/course/THU02011000282/16906068">《大唐兴衰》</a>。</li>
+<li><strong>理学</strong>：末流985的“四大力学”；末流985的地球物理学。</li>
+<li><strong>工学</strong>：末流985的工科数学；末流985的部分电子类专业课；末流985的部分计算机类专业课；末流985的部分地学类专业课；末流985的地球物理学类专业课；考研级别的计算机学科专业基础综合、顶级985的计算机类硕士专业课。</li>
+<li><strong>农学</strong>：无。</li>
+<li><strong>医学</strong>：无。</li>
+<li><strong>军事学</strong>：无。</li>
+<li><strong>管理学</strong>：无。</li>
+<li><strong>艺术学</strong>：清华大学的<a href="https://www.xuetangx.com/course/THU08091000423/16906223">《艺术的启示》</a>，没看完。</li>
+</ul>
+<p>我浅尝辄止地尝试了中南大学的<a href="https://www.xuetangx.com/course/csu08091002882/16907155">《编译原理》</a>、清华大学的<a href="https://www.xuetangx.com/course/THU05021000363/16905990">《日语与日本文化》</a>、清华大学的<a href="https://www.xuetangx.com/course/THU08061000294/16905890">《电路原理》</a>、北京大学的<a href="https://www.xuetangx.com/course/PKU10041000675/16905993">《身边的营养学》</a>、中南财经政法大学的<a href="https://www.xuetangx.com/course/ZUEL12021000598/16904972">《经济地理与企业兴衰》</a>、清华大学的<a href="https://www.xuetangx.com/course/THU13031000432/5881454">《原来姹紫嫣红开遍——昆曲艺术欣赏昆曲》</a>等课程。本科光阴的虚掷，使我越级打怪；正反馈系统的缺失，使我看了非常多课程却有始无终。以“学完一门完整的课程”为标准，我的通识教育非常差。</p>
+<p>基于本人踩过的坑和浪费的时间，我的建议见《上篇：伪教育/3 高等教育》的第3节“进退无由”。</p>
+<h2 id="0x04-见天地の必要条件"><a class="header" href="#0x04-见天地の必要条件">0x04 见天地の必要条件</a></h2>
+<ul>
+<li>只要有足够的学习时间，相信自己可以学会任何已有的真理，包括最难的数学和哲学。</li>
+<li>天地万顷，只取一亩耘。</li>
+<li>可以快速地辨别信息的归属，为其贴标签。</li>
+<li>假如对“天地”的某个组成部分感兴趣，可以通过通识书籍和教材迅速地入门。</li>
+<li>碎片化信息仅且仅能向你提供兴趣、顿悟或实例，而非认知。</li>
+<li>不是韭菜，而且具备割韭菜的能力。</li>
+<li>完全理解“天地交通”所蕴含的哲理。</li>
+</ul>
+<p><strong>只要有足够的学习时间，相信自己可以学会任何已有的真理，包括最难的数学和哲学</strong>。目标始于自信。这也是我把“相信”放入第一个必要条件的根本原因。这句话还有两个关键“足够的学习时间”和“已有的真理”，它们和“相信自己”一起，筛掉了至少98%的人。</p>
+<ul>
+<li><strong>足够的学习时间</strong>：几乎所有的失败者都尝试过逆袭，或想过逆袭。但是，大多数人又失败了。因为学习方法不合理，ta们有效的学习时间远远不足够。要么缺乏正反馈，早早地放弃；要么在进行一种自我感动式的“学习”，有效学习时间几乎为零；要么设立了一个错误的deadline，只欠坚持。</li>
+<li><strong>相信自己</strong>：没有自信，没有任何的可能性。</li>
+<li><strong>已有的真理</strong>：在本文的开头中，我引用了马克思主义哲学的两个概念“主观能动性”和“真理”，而且我在后文中提到了“通识教育 = 科学 + 艺术”。不妨让“已有的真理 = 已有的科学”。基于此，学习素材的源头必须是正统的自然科学与社会科学。</li>
+</ul>
+<p><strong>天地万顷，只取一亩耘</strong>。两个关键词：“取”和“耘”。</p>
+<ul>
+<li><strong>取</strong>：当做题人初见天地之广阔，他一定非常欣喜，看不完的书和电影、学不完的真理。所谓“取”，指的是在万顷天地中取舍。</li>
+<li><strong>耘</strong>：耕耘终身从之的事业。</li>
+</ul>
+<p><strong>可以快速地辨别信息的归属，为其贴标签</strong>。不难发现，通识教育往往不受人待见；党同伐异的对立和不体面的骂战充斥着互联网。在过滤掉噪音之后，互联网也剩不下多少信息了。</p>
+<ul>
+<li><strong>假如对“天地”的某个组成部分感兴趣，可以通过通识书籍和教材迅速地入门。</strong></li>
+<li><strong>碎片化信息仅且仅能向你提供兴趣、顿悟或实例，而非认知。</strong></li>
+<li><strong>不是韭菜，而且具备割韭菜的能力。</strong></li>
+</ul>
+<p>许多知识区博主和成长区up主，要么搬运、要么洗稿，以各种碎片化信息收割绝大多数新时代文盲的注意力。ta们的废话比伪精英信口胡诌的暴论强得多；这也体现了时代的进步。但是，讨论“是应该听废话还是应该听暴论”无异于让人选择“是吃土还是吃屎”，毫无意义。有效的学习来自于经过时间考验的知识体系。假如对某个领域感兴趣，“找一门基础的课程学学、找一本入门书看看”方为正道。</p>
+<p><strong>完全理解“天地交通”所蕴含的哲理</strong>。引用马克思主义哲学的定义，“天地交通”即“联系的普遍性”。信手举几个例子：过程与过程之间服从演绎法与归纳法的限定；物理物理，万物之理；文本信息以“语言”为载体，和“语言学”相联系。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../1-pseudo-educations/4-social-education.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../2-self-educations/1-knowing-your-life/2-knowing-the-people.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../1-pseudo-educations/4-social-education.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../2-self-educations/1-knowing-your-life/2-knowing-the-people.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>应试教育 - 新生：从伪教育到自我教育</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../1-preface-to-you-like-me.html">序：致和我相似的你</a></li><li class="chapter-item expanded affix "><li class="part-title">上篇：伪教育</li><li class="chapter-item expanded "><a href="../1-pseudo-educations/1-family-education.html"><strong aria-hidden="true">1.</strong> 家庭教育</a></li><li class="chapter-item expanded "><a href="../1-pseudo-educations/2-exam-oriented-education.html" class="active"><strong aria-hidden="true">2.</strong> 应试教育</a></li><li class="chapter-item expanded "><a href="../1-pseudo-educations/3-higher-education.html"><strong aria-hidden="true">3.</strong> 高等教育</a></li><li class="chapter-item expanded "><a href="../1-pseudo-educations/4-social-education.html"><strong aria-hidden="true">4.</strong> 社会教育</a></li><li class="chapter-item expanded affix "><li class="part-title">下篇：自我教育</li><li class="chapter-item expanded affix "><li class="part-title">知行</li><li class="chapter-item expanded "><a href="../2-self-educations/1-knowing-your-life/1-knowing-the-world.html"><strong aria-hidden="true">5.</strong> 见天地</a></li><li class="chapter-item expanded "><a href="../2-self-educations/1-knowing-your-life/2-knowing-the-people.html"><strong aria-hidden="true">6.</strong> 见众生</a></li><li class="chapter-item expanded "><a href="../2-self-educations/1-knowing-your-life/3-knowing-yourself.html"><strong aria-hidden="true">7.</strong> 见自己</a></li><li class="chapter-item expanded affix "><li class="part-title">数学</li><li class="chapter-item expanded "><a href="../2-self-educations/2-math/1-everyone-needs-math.html"><strong aria-hidden="true">8.</strong> 凡人皆需数学</a></li><li class="chapter-item expanded "><a href="../2-self-educations/2-math/2-elementary-math.html"><strong aria-hidden="true">9.</strong> 初等数学</a></li><li class="chapter-item expanded "><a href="../2-self-educations/2-math/3-life-model.html"><strong aria-hidden="true">10.</strong> 人生模型</a></li><li class="chapter-item expanded "><a href="../2-self-educations/2-math/4-goal-model.html"><strong aria-hidden="true">11.</strong> 目标模型</a></li><li class="chapter-item expanded "><a href="../2-self-educations/2-math/5-math-and-beyond.html"><strong aria-hidden="true">12.</strong> 数学与数学之外</a></li><li class="chapter-item expanded affix "><li class="part-title">马克思主义哲学</li><li class="chapter-item expanded "><a href="../2-self-educations/3-marxist-philosophy/1-materialism.html"><strong aria-hidden="true">13.</strong> 唯物论</a></li><li class="chapter-item expanded "><a href="../2-self-educations/3-marxist-philosophy/2-two-features.html"><strong aria-hidden="true">14.</strong> 两个特征</a></li><li class="chapter-item expanded "><a href="../2-self-educations/3-marxist-philosophy/3-three-laws.html"><strong aria-hidden="true">15.</strong> 三大规律</a></li><li class="chapter-item expanded "><a href="../2-self-educations/3-marxist-philosophy/4-five-contradictions.html"><strong aria-hidden="true">16.</strong> 五对范畴</a></li><li class="chapter-item expanded "><a href="../2-self-educations/3-marxist-philosophy/5-epistemology.html"><strong aria-hidden="true">17.</strong> 认识论</a></li><li class="chapter-item expanded affix "><li class="part-title">人际关系</li><li class="chapter-item expanded "><a href="../2-self-educations/4-interpersonal-relationship/1-three-levels.html"><strong aria-hidden="true">18.</strong> 三种层次</a></li><li class="chapter-item expanded "><a href="../2-self-educations/4-interpersonal-relationship/2-three-types.html"><strong aria-hidden="true">19.</strong> 三种类别</a></li><li class="chapter-item expanded "><a href="../2-self-educations/4-interpersonal-relationship/3-begin.html"><strong aria-hidden="true">20.</strong> 知所起</a></li><li class="chapter-item expanded "><a href="../2-self-educations/4-interpersonal-relationship/4-end.html"><strong aria-hidden="true">21.</strong> 离别</a></li><li class="chapter-item expanded affix "><li class="part-title">异性关系</li><li class="chapter-item expanded "><div><strong aria-hidden="true">22.</strong> 底层模型</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">23.</strong> 通用版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">24.</strong> 女生版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">25.</strong> 男生版</div></li><li class="chapter-item expanded affix "><li class="part-title">它山之石</li><li class="chapter-item expanded "><div><strong aria-hidden="true">26.</strong> 好奇心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">27.</strong> 自信心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">28.</strong> 解耦合</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">29.</strong> 取舍</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">30.</strong> 美育</div></li><li class="chapter-item expanded affix "><li class="part-title">信息素养</li><li class="chapter-item expanded "><div><strong aria-hidden="true">31.</strong> 这是最好的时代</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">32.</strong> 极简信息论</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">33.</strong> 阅读理解</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">34.</strong> 英语</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">35.</strong> 像硅基生命一样思考</div></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../2-epilogue-to-me-like-you.html"><strong aria-hidden="true">36.</strong> 后记：致和你相似的我</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../3-acknowledgments.html">致谢</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">新生：从伪教育到自我教育</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="上篇伪教育2-应试教育"><a class="header" href="#上篇伪教育2-应试教育">上篇：伪教育/2 应试教育</a></h1>
+<h2 id="0x01-站在不吃香菜的肩膀上"><a class="header" href="#0x01-站在不吃香菜的肩膀上">0x01 站在不吃香菜的肩膀上</a></h2>
+<p>所谓应试教育，其主角当然是考试了。周考、月考、期中考试、期末考试、中考、高考、考研等，考试贯穿了做题人的前二十年。广为流传的“一考定终身”指的是高考。但是，在我看来，“一考定终身”定的仅仅是“有无受教育的可能性”：中考落榜了，中专；高考落榜了，大专；经过了大学一轮又一轮的扩招，考研几乎成为了第二次高考。所以，以“一次考败，抱憾终身”形容做题人似乎更加妥帖。在那之前，我先泛泛地和大家重温一下做题人们所受的应试教育。</p>
+<h3 id="1-中考"><a class="header" href="#1-中考">1. 中考</a></h3>
+<p>我六岁读了一天幼儿园，哭着回家，然后第二天直接读一年级了。一年级的期末考试，我的语文96分、数学99分。我顺利地渡过了第一劫。</p>
+<p>二、三、四年级稀松平常。我在一年级的基础上稍稍退步，但没有沦落为坏小孩。到了五年级，我备受班主任重视，终于进入了“好学生”的行列。在踏入中学之前，我顺利地渡过了第二劫。</p>
+<p>有了自诩“好学生”的底气，六、七、八、九年级也稀松平常。我在五年级期末考试的基础上起起伏伏。初中时期，我渡过了最大的劫——中考。为了留住优质生源，我们县重启了提前招生的策略。根据九年级上学期的期末考试成绩（全县统一改卷、排名），全县的优质生源提前参加我们县最好的高中的招生考试，录取人数260左右。我所在的初中17人参加，但只有3个人被录取。我是其中之一。在提前进入了我们县最好的高中之后，只有全县眼界最广、成绩最好的几个学生的父母，才让自己的孩子放弃录取资格，备战中考，以进入市重点、省重点。</p>
+<p>和上一篇文章类似，秀一下恶劣的教育环境：</p>
+<ul>
+<li><strong>小学同学</strong>：一个乡管辖多个村。有些村没有小学；有些村只有一二三年级。所以，一些来自偏远的村的孩子需要自己带米、带菜，放在学校的食堂里蒸熟。偷别人菜（比如鸡蛋）的小混混很多。因为小学不分好差班，小流氓、校园霸凌几乎存在于每个班级。</li>
+<li><strong>小学老师</strong>：体罚，让犯错的学生互扇巴掌，扇到脸颊红肿为止；几乎所有的老师都只关心“好学生”，根本不把差生当人看；至于教学水平，你无法评价不存在的东西。我现在依然记得，五年级被盛宠的我天天被叫起来念阅读理解。有一次，我不认识乌江自刎的“刎”字，“wěn”脱口而出。语文老师一听：“什么？让我看看。”她迟疑了一秒：“这个字念‘wù’，继续念吧。”</li>
+<li><strong>初中同学</strong>：小流氓长大了，成为了具备战斗力的大流氓。他们整天流连于网吧倒也人畜无害，但打群架就威胁学校的治安了。所以，王者荣耀这类手游可谓功德无量，从精神上阉割了流氓的战斗力。</li>
+<li><strong>初中老师</strong>：历史老师由英语老师兼任（一个老师多门科目换来换去简直是家常便饭）；把自己的电脑以网吧的价格租给学生；男老师企图潜规则女学生等。</li>
+</ul>
+<p>关于中考，我想谈什么？<strong>幸运</strong>。据我观察，本书的读者至少是本科。你们或许知道、或许不知道：在某些穷乡僻壤里，有些人注定一辈子也不可能走出大山。ta们是没有<a href="https://movie.douban.com/subject/26904137/">出路</a>的，但你是有的。和条件比自己优渥的人比惨是一种本能，但你也应该铭记“翻开过微积分教材”的幸运。</p>
+<h3 id="2-高考"><a class="header" href="#2-高考">2. 高考</a></h3>
+<p>关于高考，我想谈什么？<strong>不幸</strong>。绝大多数高中老师的应试能力极差，更别提教别人了。像语文、政治、历史这种学科，绝大多数小镇做题人相当于闭门造车，沿着错误的方向努力。你可以看看你们高中老师的学历，是不是顶多本省某所师范大学的本科？跟着考不上清北的高中老师学习，你怎么可能考上清北呢？中学期间，我一直以为勤奋与聪明是一种此消彼长的关系。即，越学越笨。后来，我才逐渐地意识到：学习不会使人变笨；只有跟着笨的人学习，才会变笨。因此，<strong>高考的第一个坑是不自学。</strong></p>
+<p><strong>自学是少受应试教育毒害的关键</strong>。中国最声名远播的高中不是中国人民大学附属中学，也不是上海中学，而是衡水中学。绝大部分野鸡高中照猫画虎地学习所谓的“衡水模式”，比如跑操、军事化管理。但是，堆时间、堆纪律无法有效地提高分数。绝大多数做题人做了几万道烂题，把脑子做成了一团糨糊，却从来没有好好地研究过几遍高考真题。除了应试教育之外，自学对于高等教育也至关重要。几乎所有的本科生培养方案都是陈旧的。每个学院负责教学改革的人只擅长让本科生在推免的窗口期大骂推免政策朝令夕改。它们可能为了一个虚假的就业率数字大费周章，却不愿意切实地提高学生的就业竞争力。</p>
+<p><strong>高考的第二个坑是填志愿</strong>。绝大多数高校的生化环材与农林牧渔招了多少来自北上广深的学生？招了多少来自偏远山区的学生？第一，小镇做题人对于专业可谓一无所知；第二，越差的高中越看重学校的档次，以至于高中老师评奖评优的KPI也是学校的档次，进而劝说高中生报考好学校的烂专业。</p>
+<p>所以，<strong>你没有必要过于怀疑或苛责自己的能力</strong>。对于做题人而言，高考是一场价值有且只有录取通知书的考试，而不是按照分数划分三六九等的能力测试。因为“与高考和解”或“清理后文所提到的遗毒”不容易，所以我先送大家一句“保质期不一定很长，但可能很有效”的鸡汤：<strong>凡此过往，皆为序章。</strong></p>
+<h2 id="0x02-单向度的人"><a class="header" href="#0x02-单向度的人">0x02 单向度的人</a></h2>
+<h3 id="1-内卷"><a class="header" href="#1-内卷">1. 内卷</a></h3>
+<p>根据是否存在<a href="https://en.wikipedia.org/wiki/Zero-sum_game">零和博弈</a>，考试分为选拔性考试与通过性考试。像中考、高考这种所谓的“择优录取”考试，属于选拔性考试；本科的期末考试、TOEFL等只需要达到某个分数即可，属于通过性考试。为了成为选拔性考试的优胜者，做题人只有在考试能力上排名靠前，才可以进入所谓的“名校”。选拔性考试与通过性考试没有优劣之分，仅仅是目的不同而已。但可怕的是，选拔性考试横跨了青少年形成三观的人生阶段，使做题人养成了一些受害终生的习惯和思维。</p>
+<ul>
+<li><strong>失败者</strong>：选拔性考试注定了绝大多数做题人只是陪衬，成为尖子生的背景板。在考试中的失败者往往有“名校情结”。更隐蔽的是，ta们常年受到老师、父母在言语上的打压，严重地缺乏正反馈，进而丧失了必要的自信心。此外，“错题本”或多或少地以某种畸形的方式与失败和解，比如黑马逆袭、读书无用论、仇智。</li>
+<li><strong>成功者</strong>：“做题家”靠着成绩，成为了收割赞扬、鼓励和奖励的赢家，但最终结局依然是沦为内卷的受害者。第一，做题水平很容易成为ta们的信息茧房，但做题水平在转化为录取通知书之后，用处很小；第二，长时间浸泡在基于内卷的夸奖中，容易滋生“人上人”心态和病态的好胜心；第三，因为正反馈来自于考试，所以ta们也许爱考试，但不一定爱知识。</li>
+</ul>
+<p><strong>内卷没有赢家。</strong></p>
+<h3 id="2-遗毒"><a class="header" href="#2-遗毒">2. 遗毒</a></h3>
+<ul>
+<li><strong>又卑又亢</strong>：如上所述，应试教育的第一条遗毒由错误的反馈系统所造成。<strong>与应试教育相配套的反馈系统塑造了畸形的自卑与自信</strong>。对于“错题本”而言，ta们的自卑使自己要么逆袭成为“做题家”，要么终日和奶头乐为伴。对于“做题家”而言，ta们的自信非常脆弱，因为应试能力所带来的好处仅限于考试。在其它场景下，脆弱的自信几乎一触即溃。</li>
+<li><strong>路径依赖</strong>：第二条遗毒源自于应试教育过度发达的生态环境。高考的产业链可谓渗透了中国所有的普通家庭。和高考配套的教育体系、教辅资料、父母，使高考成为了一件“只需要刷题和考试”的事情。擅不擅长刷题和考试、刷题和考试容不容易另说，单单高考的生态环境，便注定了高考根本不可能DIY。当然，高考确实不应该过早地让能力不足的高中生DIY。但是，在中学时期投入大把大把的时间刷题和考试，使做题人变成了官媒所嘲笑的“小镇做题家（错题本）”模样。<strong>应试教育过度发达的生态环境使高考成为了一件路径依赖的事情</strong>。无论高考难不难，学生只需要负责做题和考试，而独立地做成一件事的能力、沟通能力几乎没有得到锻炼。</li>
+<li><strong>低级趣味</strong>：第三条遗毒关于价值观。应试教育对应两种极端：学而优则仕与读书无用论。前者延续了封建社会科举制的价值观，认为书中自有黄金屋、书中自有颜如玉；后者在考试分数无法变现的情况下冒头。它们的本质是“将教育的作用贬损为功名利禄”。这也是应试教育的低级趣味。<strong>教育的有用之用在于知识本身；教育的无用之用也在于知识本身</strong>。知识在应试教育中的风头被分数盖过了，使做题人以分数为荣、以分数变现为动机。这使做题人不仅陷入了应试教育的误区，培养了过于低级趣味的价值观，而且连知识的力量都得不到。</li>
+</ul>
+<h2 id="0x03-应试"><a class="header" href="#0x03-应试">0x03 应试</a></h2>
+<h3 id="1-误区"><a class="header" href="#1-误区">1. 误区</a></h3>
+<p>因为大一新生仍然没有脱离考试，所以本节谈一谈几个常见的应试误区。</p>
+<ul>
+<li><strong>重复</strong>：对于一场为期两天的考试，我们真的有必要准备三年吗？根本没必要。绝大多数人的高中，与其说读了三年，不如说“把一天重复了一千遍”。很多人根本不应该在高三的六月份参加高考，而应该在“重复”发生的时候高考。等到所谓的“录取吧（678的谐音）”，很多人已经学得非常麻木了，一遍又一遍地考低分，无法独立地突破个人的瓶颈，进而迈入新的分数段。与其像行尸走肉一样继续熬苦日子，不如早点结束。</li>
+<li><strong>线性思维</strong>：所谓的线性思维，是指“因为A，所以B”、“因为非B，所以非A”这种逻辑链极短的思维方式。任何稍具规模的问题，其影响因素必然涉及方方面面，而且因素与因素、因素与问题、问题的各个阶段均存在较为复杂的联系和变化。如果属于“线性人”，你就只有对生活逆来顺受的份了。高考也是稍具规模的问题。它所需要的核心能力是刻意练习。</li>
+<li><strong>自我设限</strong>：“做题家”是少数人，而“普通的大多数”在长年累月的被否定之下，早早地树立了名副其实的小目标，比如考个本科、考个末流985。但试想，对于高考这种简单的刻意练习模型尚且如此，ta们怎么敢在梦想上志存高远呢？自我设限是一个普通做题人在高考分数上举起的白旗，也是人生被自我阉割的开始。</li>
+</ul>
+<h3 id="2-走出误区"><a class="header" href="#2-走出误区">2. 走出误区</a></h3>
+<p>和《上篇：伪教育/1 家庭教育》一样，剩下的三篇“伪教育”也蜻蜓点水地写一点弥补措施。</p>
+<p>应试教育的破局之道在于<strong>自学</strong>。应试教育的怪胎几乎不自学。一方面，ta们迷信虚假的应试权威（除了具有情怀或志向的良师之外，比如张桂梅、李永乐，选择当老师的人几乎是各行各业最失败的人）；另一方面，ta们误以为自学很难，否则还要老师干嘛？关于自学的可行性，我将在《下篇：自我教育/2 数学/1 初等数学》中以一个例子详述。在我看来，自学的关键是<strong>问题</strong>。一个善于在生活中发现问题的人，才可能独立地解决问题。对于自学，第一个问题是“如何让自己提出问题”。与上文的“重复”相对应，有效学习即“不重复”。根据“事物是永恒发展的”，任何的学习过程都不完美。很多人缺乏“找茬”的意识以及刷新题与总结旧题的时间分配不合理。从形式上看，有效学习必须服从<strong>输入输出相适应</strong>。学习是将<strong>输入</strong>转化为<strong>输出</strong>的过程。从<strong>输入</strong>出发，学习材料应该在保证质量的前提下，尽可能地满足<a href="https://en.wikipedia.org/wiki/Stephen_Krashen">Stephen Krashen</a>的<a href="https://en.wikipedia.org/wiki/Second-language_acquisition"><em>二语习得理论</em></a>的 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7429em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 法则；从<strong>输出</strong>出发，学习材料应该按照<a href="https://en.wikipedia.org/wiki/Bloom&#x27;s_taxonomy"><em>布鲁姆教育目标分类法</em></a>转化为学习笔记。持续 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7429em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 的<a href="https://en.wikipedia.org/wiki/Iteration"><em>迭代</em></a>，拥有顶级的自学能力仅仅是时间问题。</p>
+<blockquote>
+<p>世有伯乐，然后有千里马。千里马常有，而伯乐不常有。故虽有名马，祗辱于奴隶人之手，骈死于槽枥之间，不以千里称也。</p>
+<p>马之千里者，一食或尽粟一石。食马者，不知其能千里而食也。是马也，虽有千里之能，食不饱，力不足，才美不外见，且欲与常马等不可得，安求其能千里也？</p>
+<p>策之不以其道，食之不能尽其材，鸣之而不能通其意，执策而临之，曰：“天下无马！”呜呼！其真无马邪？其真不知马也！</p>
+<p>——韩愈《马说》</p>
+</blockquote>
+<p>在后续的文章详细地讨论天赋和潜力之前，我希望你暂且默认“天生你材必有用”。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../1-pseudo-educations/1-family-education.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../1-pseudo-educations/3-higher-education.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../1-pseudo-educations/1-family-education.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../1-pseudo-educations/3-higher-education.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

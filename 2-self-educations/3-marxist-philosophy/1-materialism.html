@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>唯物论 - 新生：从伪教育到自我教育</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../1-preface-to-you-like-me.html">序：致和我相似的你</a></li><li class="chapter-item expanded affix "><li class="part-title">上篇：伪教育</li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/1-family-education.html"><strong aria-hidden="true">1.</strong> 家庭教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/2-exam-oriented-education.html"><strong aria-hidden="true">2.</strong> 应试教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/3-higher-education.html"><strong aria-hidden="true">3.</strong> 高等教育</a></li><li class="chapter-item expanded "><a href="../../1-pseudo-educations/4-social-education.html"><strong aria-hidden="true">4.</strong> 社会教育</a></li><li class="chapter-item expanded affix "><li class="part-title">下篇：自我教育</li><li class="chapter-item expanded affix "><li class="part-title">知行</li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/1-knowing-the-world.html"><strong aria-hidden="true">5.</strong> 见天地</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/2-knowing-the-people.html"><strong aria-hidden="true">6.</strong> 见众生</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/1-knowing-your-life/3-knowing-yourself.html"><strong aria-hidden="true">7.</strong> 见自己</a></li><li class="chapter-item expanded affix "><li class="part-title">数学</li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/1-everyone-needs-math.html"><strong aria-hidden="true">8.</strong> 凡人皆需数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/2-elementary-math.html"><strong aria-hidden="true">9.</strong> 初等数学</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/3-life-model.html"><strong aria-hidden="true">10.</strong> 人生模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/4-goal-model.html"><strong aria-hidden="true">11.</strong> 目标模型</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/2-math/5-math-and-beyond.html"><strong aria-hidden="true">12.</strong> 数学与数学之外</a></li><li class="chapter-item expanded affix "><li class="part-title">马克思主义哲学</li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/1-materialism.html" class="active"><strong aria-hidden="true">13.</strong> 唯物论</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/2-two-features.html"><strong aria-hidden="true">14.</strong> 两个特征</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/3-three-laws.html"><strong aria-hidden="true">15.</strong> 三大规律</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/4-five-contradictions.html"><strong aria-hidden="true">16.</strong> 五对范畴</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/3-marxist-philosophy/5-epistemology.html"><strong aria-hidden="true">17.</strong> 认识论</a></li><li class="chapter-item expanded affix "><li class="part-title">人际关系</li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/1-three-levels.html"><strong aria-hidden="true">18.</strong> 三种层次</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/2-three-types.html"><strong aria-hidden="true">19.</strong> 三种类别</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/3-begin.html"><strong aria-hidden="true">20.</strong> 知所起</a></li><li class="chapter-item expanded "><a href="../../2-self-educations/4-interpersonal-relationship/4-end.html"><strong aria-hidden="true">21.</strong> 离别</a></li><li class="chapter-item expanded affix "><li class="part-title">异性关系</li><li class="chapter-item expanded "><div><strong aria-hidden="true">22.</strong> 底层模型</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">23.</strong> 通用版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">24.</strong> 女生版</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">25.</strong> 男生版</div></li><li class="chapter-item expanded affix "><li class="part-title">它山之石</li><li class="chapter-item expanded "><div><strong aria-hidden="true">26.</strong> 好奇心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">27.</strong> 自信心</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">28.</strong> 解耦合</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">29.</strong> 取舍</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">30.</strong> 美育</div></li><li class="chapter-item expanded affix "><li class="part-title">信息素养</li><li class="chapter-item expanded "><div><strong aria-hidden="true">31.</strong> 这是最好的时代</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">32.</strong> 极简信息论</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">33.</strong> 阅读理解</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">34.</strong> 英语</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">35.</strong> 像硅基生命一样思考</div></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../2-epilogue-to-me-like-you.html"><strong aria-hidden="true">36.</strong> 后记：致和你相似的我</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../3-acknowledgments.html">致谢</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">新生：从伪教育到自我教育</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="下篇自我教育3-马克思主义哲学1-唯物论"><a class="header" href="#下篇自我教育3-马克思主义哲学1-唯物论">下篇：自我教育/3 马克思主义哲学/1 唯物论</a></h1>
+<p>在进入正题之前，我先写一点所谓的阅读须知。</p>
+<p>第一，什么是马克思主义哲学？对于国产的大一新生而言，“马克思主义基本原理”是必修的思政课之一。和它同系列的课程包括“毛泽东思想和中国特色社会主义理论”、“中国近代史纲要”、“思修法基”、“形势与政策”，甚至“军事理论”等。现在大家对这些“红”课的刻板印象很深。大一新生可能极左、可能极右，甚至认为思政课是洗脑课。当然，绝大多数大一新生根本分不清什么是“左”、什么是“右”。所以，我回答“什么是马克思主义哲学”的主要立足点是“它为什么不红”。至少就考研政治的考察范围（思政课的内容也八九不离十）来看，马克思主义基本原理包括马克思主义哲学、马克思主义政治经济学、科学社会主义。在开始准备考研政治的时候，我以为“背政治”是我负能量的巅峰，因为我对考研政治的刻板印象不弱于任何一个国产大学生。但是，所谓的“洗脑”是无脑的人云亦云。马克思主义基于德国古典哲学、英国古典政治经济学、英法两国的空想社会主义。如果不去“见天地”，你甚至连什么是哲学、什么是政治经济学、什么是空想社会主义都不知道。本书的马克思主义哲学篇主要是发展自德国古典哲学的马克思主义哲学，和马克思主义政治经济学、科学社会主义的关系不大。也就是说，马克思主义哲学篇几乎不谈政治，至少比后面的人际关系篇谈得要少。</p>
+<p>第二，我的哲学水平。为什么不写其它哲学，只写马克思主义哲学？因为我只读过马克思主义哲学。哲学分为很多流派，比如东方哲学和西方哲学，还有什么唯物主义和唯心主义之分，早可以追溯到老子、庄子、亚里士多德，近一点有马克思主义哲学。我们还可以给哲学附加非常多前缀，比如科技哲学、政治哲学。和数学篇类似，我只讲我所学过的哲学，但仍然和数学篇类似，我可以用三脚猫的哲学水平，呈现哲学足够强的解析力。在本书的框架成型之前，我学过的教材和课程只有：学堂在线的陈为蓬的<a href="https://www.xuetangx.com/course/THU12011001060/16904967">逻辑学概论</a>，听完了大部分；耶鲁大学的<a href="https://oyc.yale.edu/death/phil-176">哲学——死亡</a>，好像只听了三四节课；肖秀荣的精讲精练；徐涛的考研政治强化课；在本书的框架成型之后，我读完了一本<a href="https://book.douban.com/subject/35127660/">《哲学的慰藉》</a>。真正启蒙我以哲学的视角认识世界的哲学是马克思主义哲学。在开始准备考研政治之后，“牛逼啊！原来马克思主义是这样的！”等到你足够强，可以读懂我，你会发现包括但不限于我这样的准知识分子，乌托邦（社会主义、共产主义）简直已经成为了一种公知型高级知识分子（高晓松那些废物不算）的执念。和数学篇类似，马克思主义哲学篇既是“见天地”的有力武器，又是“见天地”的检验标准。如果可以读懂马克思主义哲学篇，你将有能力触碰最艰深的哲学，因为我足以触碰最艰深的哲学；如果读懂了数学篇和马克思主义哲学篇，你应该已经不需要这本书了。但是，如果连数学篇和马克思主义哲学篇都读不懂，即使顺利毕业的你其实没有什么资格自称“学士”，充其量是一个拿了本科学位证的高中生而已。别“带专带专”地假装自嘲实则找人家大专生的优越感了，你远远不如别人。在经济下行且失业率飙升的环境下，相信你可以理解我的这句话。</p>
+<p>第三，如何食用哲学？既然我的哲学水平是三脚猫，而且哲学按照流派分类，那么你能不能食用其它哲学呢？比如老子、庄子、王阳明。当然可以。又比如，你就读于某所不上不下的野鸡学校，热衷于你某个另类的思政老师或网红思政老师（比如陈果）所教授的“哲学”。当然也可以。如果你因为或这样或那样的原因不愿意从马克思主义哲学入手，你可以跳过本篇，否则我就给你说道说道。马克思主义哲学篇是马克思主义哲学的子集。因此，你需要有一本系统地讲述马克思主义哲学的教材。我比较建议你冲学长学姐要一份考研政治参考教材，或者直接B站找徐涛的课程看，只看马克思主义哲学部分。虽然从一些哲学的科普读物或经典教材，甚至某位你所感兴趣的哲学家开始更好，但我没有尝试过，所以不作推荐。你也可以将此视作另一层用意：既然我基于最烂的学习素材写完了马克思主义哲学篇，那么只要投入学习一门课程的时间精力，你是不是一定可以达到更高的哲学水平呢？答案是显而易见的。对于马克思主义的历史脉络、逻辑脉络、定义，我肯定无法事无巨细地写一遍。本书的马克思主义哲学篇的特色在于，我会结合现实生活阐释徐涛常用的一个描述“大智慧啊！同学们！”让我们从“哲学 = 世界观 + 方法论”入手。</p>
+<blockquote>
+<p>注：我所使用的术语、定义等均出自肖秀荣的精讲精练（2023版）。</p>
+</blockquote>
+<h2 id="0x01-哲学基本问题"><a class="header" href="#0x01-哲学基本问题">0x01 哲学基本问题</a></h2>
+<p>人生活在世界上，需要对世界有一个总体的看法和把握，这就是人的<strong>世界观</strong>问题。世界观是人们对整个世界的总体看法和根本观点。对此，有一个重要的哲学基本问题区分了唯物主义和唯心主义：物质和意识，谁是世界的本原？</p>
+<p>我们抛开哲学，从数学的角度剖析一下这个问题：如何定义物质？如何定义意识？如何定义世界的本原？为什么必须在物质和意识中二选一？比如，物质和意识都是世界的本原、物质和意识都不是世界的本原。</p>
+<p>说白了，哲学是一套世界观和方法论。如果你可以提出一套完全自洽的世界观和方法论，比现有的哲学都更加完备、更加自洽，那么你将成为古往今来最伟大的哲学家之一。我们首先预设：哲学家是同时代最具有智慧的一群人，而且ta们在前人的基础上迭代，发展出了足够庞杂的哲学体系。因此，我们不得不站在前人的肩膀上。如果你愿意从马克思主义哲学入手，就必须先假设它的某些命题是<strong>公理</strong>，进而和其它的哲学流派辩论，比如唯心主义。马克思主义是唯物主义哲学。我们来到了本文的标题“唯物论”。</p>
+<p>还有一个重要的哲学基本问题：世界是否可知？</p>
+<p>在数学中，我们强调了形式化的重要性。因为没有形式化的框架，就没有推理所形成的因果链。虽然哲学有一部分形式化的东西（符号学或逻辑学的“与或非”、命题等），但我们所读（看）到的哲学至少99.9999%都是自然语言所写成的哲学。对这些不够精确的定义的理解程度也反映了一个人的哲学功底。例如，“世界是否可知”的“可知”是什么意思？我发现“苹果A是甜的”。怎么发现？吃一口就知道了。苹果A是世界的组成部分（子集），所以至少“苹果A是不是甜的”是可知的。但是，我们如何判断“苹果B是不是甜的”、“所有苹果都是甜的吗”、“世界是‘甜’的吗”。</p>
+<p>基于此，“世界是否可知”区分了<strong>可知论</strong>和<strong>不可知论</strong>。</p>
+<ul>
+<li>可知论：认为世界是可以被认识的。</li>
+<li>不可知论：认为世界是不能被人所认识或不能被完全认识的。</li>
+</ul>
+<p>在形式化和推理的层面，数学和哲学可以被挖得非常深，因为它们总是冒出一个又一个未知的命题。在哲学中，某些描述可以被压缩得异常精简。我们用纯哲学的语言压缩一下本节试试：</p>
+<ul>
+<li>哲学基本问题第一方面：世界的本原是物质还是意识？
+<ul>
+<li>唯物主义：物质第一性；意识第二性。</li>
+<li>唯心主义：意识第一性；物质第二性。</li>
+</ul>
+</li>
+<li>哲学基本问题第二方面：世界是否可知？
+<ul>
+<li>可知论：物质和意识具有同一性。</li>
+<li>不可知论：物质和意识不具有同一性。</li>
+</ul>
+</li>
+</ul>
+<p>阿巴阿巴阿巴？为什么是第一方面第二方面？第一性、第二性、同一性是啥？这个第一性和Elon Reeve Musk带火的第一性原理有什么关系？而且，我的学习素材不是这样写的啊！</p>
+<p>比如，肖秀荣的精讲精练原文：</p>
+<ul>
+<li>唯物主义：把世界的本原归结为物质，主张物质第一性，意识第二性，意识是物质的产物。</li>
+<li>唯心主义：把世界的本原归结为<strong>精神</strong>，主张意识第一性，物质第二性，物质是意识的产物。</li>
+<li>可知论：认为世界是可以被认识的，<strong>存在</strong>和<strong>思维</strong>具有同一性。</li>
+<li>不可知论：认为世界是不能被人所认识或不能被完全认识的，否认<strong>存在</strong>和<strong>思维</strong>的同一性。</li>
+</ul>
+<p>我们顺带谈一下<strong>教育基本问题</strong>：这些人抄书都不肯好好抄。</p>
+<p>我们可以从原句注意到这么一个问题：它们根本不区分同义词用来用去所造成的理解问题。这不仅是文科的问题，而且在理工科中也非常严重，比如各种符号体系非常混乱。在我所压缩的部分中：物质、存在一律写作物质；意识、精神、思维一律写作意识。</p>
+<p>好的教材浅显易懂，你们可以从知乎搜到不少吐槽国内教材的、推荐国外教材的回答。有能力必须读（看）经典的原版教材或课程；不行也要选有口碑的译本。提一个醒呼应前文：不要迷你们特立独行的某个笨比老师。它们真的懂哲学和社会科学吗？本科期间，我是试验班的，所以没有那种常规的思政课（只上过思修法基）。3个学期的政治理论与思想教育专题，每学期8节课，可能开学前两节课自愿分享假期心得、3节课让我们组队做PPT讲“东北亚五国国际关系思想与理论流派”之类的、中期参观某某纪念馆、请各种暴论型老师轮流讲一节课。某些老师的受众和某些水平极差的网红老师一样多。因为“罢黜百家，独尊马术”，没有学术的民主和思想的自由，张维为这种人遍地都是。在哲学这些领域中，良好的信息素养是学好哲学重中之重的前提条件。</p>
+<p>回到正题，我不太准确地概括一下本节：</p>
+<ul>
+<li>哲学的第一个基本问题：世界的本原是物质还是意识？
+<ul>
+<li>唯物主义：世界的本原是物质。</li>
+<li>唯心主义：世界的本原是意识。</li>
+</ul>
+</li>
+<li>哲学的第二个基本问题：世界是否可知？
+<ul>
+<li>可知论：世界可以被完完全全地认识。</li>
+<li>不可知论：世界不可以被完完全全地认识。</li>
+</ul>
+</li>
+</ul>
+<p>马克思主义哲学的立场是“唯物主义 + 可知论”。</p>
+<h2 id="0x02-唯物主义"><a class="header" href="#0x02-唯物主义">0x02 唯物主义</a></h2>
+<p><a href="https://www.bilibili.com/video/BV14Y4y1n7hs/">【社哲讲堂31】&quot;实事求是&quot;可解决90%的烦恼</a></p>
+<p>一门哲学得以延续、得以发展、得以让你在21世纪的时候学习，靠的是<strong>它的理论体系让它的世界观和方法论具有足够的合理性</strong>。例如，亚里士多德。一个受过九年义务教育的高中生，应该可以发现亚里士多德的形而上学错漏百出。那么，马克思主义哲学的理论体系是什么样的呢？它是否具有足够的合理性？</p>
+<ul>
+<li><strong>物质</strong>：不依赖于人类的意识而存在，并能为人类的意识所反映的客观存在。</li>
+<li><strong>意识</strong>：物质世界长期发展的产物，是人脑的机能和属性，是客观世界的主观映像。</li>
+</ul>
+<p>我们仿写老子《道德经》的一句话“道生一，一生二，二生三，三生万物”，“物质生意识，物质生万物”。在老子来看，“道”是世界的本原；在马克思主义哲学看来，物质是世界的本原。至于老子怎么得到“三”，为什么不是“四”，我们只能将它理解为一拍脑袋了，即经不起深究。</p>
+<p>首先，马克思主义定义了物质和意识。基于此，才有后面的两个特征、三大规律、五对范畴、认识论、乃至唯物史观、社会主义、共产主义。<strong>越根本的定义，越需要长期的、深入的理解</strong>。比如老子的“道”，言有尽而意无穷。《道德经》多少字？无论哪个版本，没有超过6,000字，但国学大师们、知识分子们、东方的哲学家们在6,000字不到的《道德经》上雕了多少花？类似地，我有必要强调：至少对于马克思主义哲学而言，某些定义，比如物质、意识、实践、主观能动性，需要常读常新，直至形成一个足够稳定的理解，否则<strong>基于此世界观的方法论就变成了空中楼阁</strong>。至此，我们可以顺便回答一个问题，为什么我们“听过很多道理，依然过不好这一生”？有些人怪罪执行力；有些人怪罪意志力；有些人怪罪命运。我问“我们”一句：你世界观的底座在哪里？我继续问那些好为人师的人（包括我）：你世界观的底座在哪里？我会说：我世界观的底座是马克思主义哲学；至于其ta人，大概率是回答不出来的。</p>
+<p>我们姑且认为肖秀荣精讲精练以及“罢黜百家，独尊马术”的其它学习素材没有篡改历史：</p>
+<ul>
+<li>古代朴素唯物主义：物质是金、木、水、火、土等具体的物质形态。</li>
+<li>近代形而上学唯物主义：物质是原子。</li>
+<li>现代辩证唯物主义：物质是客观实在。</li>
+</ul>
+<p>又开始抽象起来了。</p>
+<p>大家应该知道所谓的金木水火土，即五行。那时候的物质充满了太多封建迷信的元素。但是，后来发展了物理学、化学、生物学，所以有了原子、中子、夸克等微观粒子。因此，从古代朴素唯物主义到近代形而上学唯物主义的<strong>基本</strong>发展之一是“对物质的理解从金木水火土等具体的物质形态（可见）到原子（宏观不可见，微观可见）”。那么，近代形而上学唯物主义的优越性是什么呢？随便列举两条：</p>
+<ul>
+<li><strong>包含了更多的物质</strong>。无论怎么列举金木水火土、苹果A、苹果B、山川湖海、风雨雷电，古代朴素唯物主义都不可能列举出空气，也无法将风解释为流动的空气，但近代形而上学唯物主义一张元素周期表（原子）就可以把万物列举一遍了。</li>
+<li><strong>更加统一</strong>：在古代朴素唯物主义中，关于物质的客观规律是《本草纲目》（某种草药治什么病）；在近代形而上学唯物主义中，关于物质的客观规律是分子（某种生化物质决定什么细胞的什么状态）。本草纲目是经验之谈，越写越厚，全是各种奇奇怪怪的特例，但现代医学由生物学、化学自底向上生发。</li>
+</ul>
+<p>从近代形而上学唯物主义到现代辩证唯物主义就更抽象了。两个问题：</p>
+<ul>
+<li>电磁场是不是物质？</li>
+<li>历史是不是物质？</li>
+</ul>
+<p>在近代形而上学唯物主义看来，电磁场当然不是物质，因为它不是原子。既然它不是物质，那么是意识吗？假如我是那个时代的唯心主义哲学家，我说：“你看！你们唯物主义根本无法解释电磁场的存在，但我们唯心主义可以！电磁场是上帝所创造的，正如一切物质都是上帝所创造的。”这样唯心主义就压倒了唯物主义。</p>
+<p>在近代形而上学唯物主义看来，历史当然不是物质，因为它不是原子。既然它不是物质，那么是意识吗？假如我是那个时代的唯物主义哲学家，我说：“历史是一种宏观的意识，是历史所包含的人类的意识的有机结合。”如果这样的话，历史是分立的瞬间。我们无法以“历史是分立的瞬间”这种世界观去剖析历史，进而提出相应的方法论（唯物史观）。</p>
+<p>但是，在现代辩证唯物主义（马克思主义哲学的立场）看来，电磁场和历史都是物质。回到马克思主义哲学对物质和意识的定义：</p>
+<ul>
+<li>物质：不依赖于人类的意识而存在，并能为人类的意识所反映的客观存在。</li>
+<li>意识：物质世界长期发展的产物，是人脑的机能和属性，是客观世界的主观映像。</li>
+</ul>
+<p>电磁场和历史满足现代辩证唯物主义对物质的定义。现代辩证唯物主义对于近代形而上学唯物主义的优越性之二包括：</p>
+<ul>
+<li><strong>从静态到动态</strong>：批评形而上学主打“不思进取”。在下一篇文章中，我将解释马克思主义哲学的两个特征。其中<strong>永恒发展</strong>让马克思主义哲学成为了无敌的存在。从这个角度去看待电磁场，我们可以发现一个有趣的点，“电磁场可以由变速<strong>运动</strong>的带电粒子产生”。时空、运动、动和静是和物质相关的重要定义及分析对象。这种“从静态到动态”的升级又囊括了更大的世界。</li>
+<li><strong>唯物史观</strong>：近代形而上学唯物主义在历史的辩论上根本打不过同时期的唯心主义，但现代辩证唯物主义可以。</li>
+</ul>
+<p>本文不厌其烦地、隆重地对物质和意识展开了讨论。此理论体系将在本章的后3篇文章中释放出极高的解析力和实用性。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../2-self-educations/2-math/5-math-and-beyond.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../2-self-educations/3-marxist-philosophy/2-two-features.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../2-self-educations/2-math/5-math-and-beyond.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../2-self-educations/3-marxist-philosophy/2-two-features.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
